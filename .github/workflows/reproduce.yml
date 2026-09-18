@@ -1,0 +1,35 @@
+name: reproduce
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  reproduce:
+    name: Supplementary Data S1 is intact and reproduces the reported AUCs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Install the pinned environment
+        run: python -m pip install -r requirements.lock.txt
+      - name: Every file matches sha256.json
+        working-directory: supplementary_data_s1
+        run: |
+          python - <<'PY'
+          import hashlib, json, pathlib
+          manifest = json.loads(pathlib.Path("sha256.json").read_text(encoding="utf-8"))
+          # sha256.json was written on Windows and records paths with backslashes; it is
+          # part of S1 and stays as written, so the separators are normalised here.
+          bad = [p for p, h in manifest.items()
+                 if hashlib.sha256(pathlib.Path(p.replace("\\", "/")).read_bytes()).hexdigest() != h]
+          assert not bad, f"checksum mismatch: {bad}"
+          print(f"{len(manifest)} files match sha256.json")
+          PY
+      - name: Reproduce all 20 AUC comparisons and intervals
+        working-directory: supplementary_data_s1
+        run: python reproduce_auc.py

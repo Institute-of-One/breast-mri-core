@@ -1,0 +1,3 @@
+# supplementary_data_s1/ must stay byte-identical to the manuscript's Supplementary Data S1,
+# whose sha256.json lists every file. No line-ending conversion, on any platform.
+supplementary_data_s1/** -text

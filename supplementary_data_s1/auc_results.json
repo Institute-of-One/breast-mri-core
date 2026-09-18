@@ -1,0 +1,508 @@
+{
+  "scope": "Post-hoc single-biomarker discrimination, fixed public mask, previously used training117 cohort",
+  "difference_direction": "substitution minus measured late",
+  "primary": "all/change",
+  "bootstrap": 10000,
+  "results": [
+    {
+      "n": 117,
+      "pcr": 36,
+      "non_pcr": 81,
+      "small_class_warning": false,
+      "status": "estimated",
+      "real_auc": 0.659122085048011,
+      "sub_auc": 0.6721536351165982,
+      "real_ci": [
+        0.5521262002743484,
+        0.7606310013717421
+      ],
+      "sub_ci": [
+        0.565843621399177,
+        0.7729852537722908
+      ],
+      "difference_sub_minus_real": 0.01303155006858725,
+      "difference_ci": [
+        -0.025720164609053575,
+        0.051097393689986226
+      ],
+      "group": "all",
+      "metric": "T0",
+      "excluded": []
+    },
+    {
+      "n": 117,
+      "pcr": 36,
+      "non_pcr": 81,
+      "small_class_warning": false,
+      "status": "estimated",
+      "real_auc": 0.7126200274348422,
+      "sub_auc": 0.7030178326474622,
+      "real_ci": [
+        0.6124742798353909,
+        0.8065843621399177
+      ],
+      "sub_ci": [
+        0.5984224965706447,
+        0.8021262002743484
+      ],
+      "difference_sub_minus_real": -0.009602194787380003,
+      "difference_ci": [
+        -0.0675582990397805,
+        0.04320987654320996
+      ],
+      "group": "all",
+      "metric": "T1",
+      "excluded": []
+    },
+    {
+      "n": 117,
+      "pcr": 36,
+      "non_pcr": 81,
+      "small_class_warning": false,
+      "status": "estimated",
+      "real_auc": 0.4595336076817559,
+      "sub_auc": 0.4633058984910837,
+      "real_ci": [
+        0.3556241426611797,
+        0.5672153635116598
+      ],
+      "sub_ci": [
+        0.35768175582990397,
+        0.571682098765432
+      ],
+      "difference_sub_minus_real": 0.0037722908093278384,
+      "difference_ci": [
+        -0.04595336076817558,
+        0.05522119341563777
+      ],
+      "group": "all",
+      "metric": "change",
+      "excluded": []
+    },
+    {
+      "n": 117,
+      "pcr": 36,
+      "non_pcr": 81,
+      "small_class_warning": false,
+      "status": "estimated",
+      "real_auc": 0.6460905349794239,
+      "sub_auc": 0.6529492455418382,
+      "real_ci": [
+        0.5384002057613169,
+        0.7489797668038408
+      ],
+      "sub_ci": [
+        0.5473251028806584,
+        0.7537808641975308
+      ],
+      "difference_sub_minus_real": 0.006858710562414272,
+      "difference_ci": [
+        -0.04252400548696844,
+        0.05555555555555558
+      ],
+      "group": "all",
+      "metric": "relative",
+      "excluded": []
+    },
+    {
+      "n": 20,
+      "pcr": 8,
+      "non_pcr": 12,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.6979166666666666,
+      "sub_auc": 0.7395833333333333,
+      "real_ci": [
+        0.4375,
+        0.90625
+      ],
+      "sub_ci": [
+        0.5,
+        0.9375
+      ],
+      "difference_sub_minus_real": 0.04166666666666663,
+      "difference_ci": [
+        0.0,
+        0.15625
+      ],
+      "group": "HR + / HER2 +",
+      "metric": "T0",
+      "excluded": []
+    },
+    {
+      "n": 20,
+      "pcr": 8,
+      "non_pcr": 12,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.7604166666666666,
+      "sub_auc": 0.7708333333333333,
+      "real_ci": [
+        0.5208333333333334,
+        0.9583333333333334
+      ],
+      "sub_ci": [
+        0.53125,
+        0.9583333333333334
+      ],
+      "difference_sub_minus_real": 0.01041666666666663,
+      "difference_ci": [
+        -0.11458333333333326,
+        0.13541666666666663
+      ],
+      "group": "HR + / HER2 +",
+      "metric": "T1",
+      "excluded": []
+    },
+    {
+      "n": 20,
+      "pcr": 8,
+      "non_pcr": 12,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.38541666666666663,
+      "sub_auc": 0.34375,
+      "real_ci": [
+        0.13541666666666666,
+        0.6458333333333334
+      ],
+      "sub_ci": [
+        0.09375,
+        0.6041666666666666
+      ],
+      "difference_sub_minus_real": -0.04166666666666663,
+      "difference_ci": [
+        -0.12500000000000003,
+        0.0
+      ],
+      "group": "HR + / HER2 +",
+      "metric": "change",
+      "excluded": []
+    },
+    {
+      "n": 20,
+      "pcr": 8,
+      "non_pcr": 12,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.5520833333333334,
+      "sub_auc": 0.5208333333333334,
+      "real_ci": [
+        0.25,
+        0.8020833333333334
+      ],
+      "sub_ci": [
+        0.23958333333333334,
+        0.7708333333333334
+      ],
+      "difference_sub_minus_real": -0.03125,
+      "difference_ci": [
+        -0.12500000000000006,
+        0.052083333333333315
+      ],
+      "group": "HR + / HER2 +",
+      "metric": "relative",
+      "excluded": []
+    },
+    {
+      "n": 51,
+      "pcr": 8,
+      "non_pcr": 43,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.5290697674418605,
+      "sub_auc": 0.5581395348837209,
+      "real_ci": [
+        0.2936046511627907,
+        0.7587209302325582
+      ],
+      "sub_ci": [
+        0.32558139534883723,
+        0.7790697674418605
+      ],
+      "difference_sub_minus_real": 0.029069767441860406,
+      "difference_ci": [
+        -0.03197674418604646,
+        0.09593023255813954
+      ],
+      "group": "HR + / HER2 -",
+      "metric": "T0",
+      "excluded": []
+    },
+    {
+      "n": 51,
+      "pcr": 8,
+      "non_pcr": 43,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.622093023255814,
+      "sub_auc": 0.6017441860465116,
+      "real_ci": [
+        0.4069767441860465,
+        0.8226744186046512
+      ],
+      "sub_ci": [
+        0.375,
+        0.8081395348837209
+      ],
+      "difference_sub_minus_real": -0.02034883720930236,
+      "difference_ci": [
+        -0.11046511627906974,
+        0.06686046511627908
+      ],
+      "group": "HR + / HER2 -",
+      "metric": "T1",
+      "excluded": []
+    },
+    {
+      "n": 51,
+      "pcr": 8,
+      "non_pcr": 43,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.49709302325581395,
+      "sub_auc": 0.4593023255813954,
+      "real_ci": [
+        0.27906976744186046,
+        0.7093023255813954
+      ],
+      "sub_ci": [
+        0.24127906976744187,
+        0.6831395348837209
+      ],
+      "difference_sub_minus_real": -0.03779069767441856,
+      "difference_ci": [
+        -0.11627906976744184,
+        0.02906976744186046
+      ],
+      "group": "HR + / HER2 -",
+      "metric": "change",
+      "excluded": []
+    },
+    {
+      "n": 51,
+      "pcr": 8,
+      "non_pcr": 43,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.627906976744186,
+      "sub_auc": 0.5843023255813954,
+      "real_ci": [
+        0.375,
+        0.8604651162790697
+      ],
+      "sub_ci": [
+        0.3691860465116279,
+        0.7848837209302325
+      ],
+      "difference_sub_minus_real": -0.043604651162790664,
+      "difference_ci": [
+        -0.19186046511627908,
+        0.09302325581395349
+      ],
+      "group": "HR + / HER2 -",
+      "metric": "relative",
+      "excluded": []
+    },
+    {
+      "n": 10,
+      "pcr": 8,
+      "non_pcr": 2,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.625,
+      "sub_auc": 0.5625,
+      "real_ci": [
+        0.125,
+        1.0
+      ],
+      "sub_ci": [
+        0.125,
+        1.0
+      ],
+      "difference_sub_minus_real": -0.0625,
+      "difference_ci": [
+        -0.25,
+        0.0
+      ],
+      "group": "HR - / HER2 +",
+      "metric": "T0",
+      "excluded": []
+    },
+    {
+      "n": 10,
+      "pcr": 8,
+      "non_pcr": 2,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.9375,
+      "sub_auc": 0.75,
+      "real_ci": [
+        0.75,
+        1.0
+      ],
+      "sub_ci": [
+        0.375,
+        1.0
+      ],
+      "difference_sub_minus_real": -0.1875,
+      "difference_ci": [
+        -0.5,
+        0.0
+      ],
+      "group": "HR - / HER2 +",
+      "metric": "T1",
+      "excluded": []
+    },
+    {
+      "n": 10,
+      "pcr": 8,
+      "non_pcr": 2,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.625,
+      "sub_auc": 0.5625,
+      "real_ci": [
+        0.125,
+        1.0
+      ],
+      "sub_ci": [
+        0.0,
+        1.0
+      ],
+      "difference_sub_minus_real": -0.0625,
+      "difference_ci": [
+        -0.25,
+        0.0
+      ],
+      "group": "HR - / HER2 +",
+      "metric": "change",
+      "excluded": []
+    },
+    {
+      "n": 10,
+      "pcr": 8,
+      "non_pcr": 2,
+      "small_class_warning": true,
+      "status": "estimated",
+      "real_auc": 0.875,
+      "sub_auc": 0.9375,
+      "real_ci": [
+        0.5,
+        1.0
+      ],
+      "sub_ci": [
+        0.75,
+        1.0
+      ],
+      "difference_sub_minus_real": 0.0625,
+      "difference_ci": [
+        -0.1875,
+        0.375
+      ],
+      "group": "HR - / HER2 +",
+      "metric": "relative",
+      "excluded": []
+    },
+    {
+      "n": 36,
+      "pcr": 12,
+      "non_pcr": 24,
+      "small_class_warning": false,
+      "status": "estimated",
+      "real_auc": 0.7951388888888888,
+      "sub_auc": 0.7569444444444444,
+      "real_ci": [
+        0.6319444444444444,
+        0.9305555555555556
+      ],
+      "sub_ci": [
+        0.5798611111111112,
+        0.90625
+      ],
+      "difference_sub_minus_real": -0.03819444444444442,
+      "difference_ci": [
+        -0.14236111111111105,
+        0.03472222222222221
+      ],
+      "group": "HR - / HER2 - (TN)",
+      "metric": "T0",
+      "excluded": []
+    },
+    {
+      "n": 36,
+      "pcr": 12,
+      "non_pcr": 24,
+      "small_class_warning": false,
+      "status": "estimated",
+      "real_auc": 0.71875,
+      "sub_auc": 0.7534722222222222,
+      "real_ci": [
+        0.5416666666666666,
+        0.875
+      ],
+      "sub_ci": [
+        0.5798611111111112,
+        0.9027777777777778
+      ],
+      "difference_sub_minus_real": 0.03472222222222221,
+      "difference_ci": [
+        -0.08333333333333326,
+        0.13888888888888895
+      ],
+      "group": "HR - / HER2 - (TN)",
+      "metric": "T1",
+      "excluded": []
+    },
+    {
+      "n": 36,
+      "pcr": 12,
+      "non_pcr": 24,
+      "small_class_warning": false,
+      "status": "estimated",
+      "real_auc": 0.3715277777777778,
+      "sub_auc": 0.47916666666666663,
+      "real_ci": [
+        0.2013888888888889,
+        0.5590277777777778
+      ],
+      "sub_ci": [
+        0.2916666666666667,
+        0.6736111111111112
+      ],
+      "difference_sub_minus_real": 0.10763888888888884,
+      "difference_ci": [
+        -0.02083333333333337,
+        0.25347222222222227
+      ],
+      "group": "HR - / HER2 - (TN)",
+      "metric": "change",
+      "excluded": []
+    },
+    {
+      "n": 36,
+      "pcr": 12,
+      "non_pcr": 24,
+      "small_class_warning": false,
+      "status": "estimated",
+      "real_auc": 0.5868055555555555,
+      "sub_auc": 0.6215277777777778,
+      "real_ci": [
+        0.3888888888888889,
+        0.7743055555555556
+      ],
+      "sub_ci": [
+        0.4201388888888889,
+        0.8055555555555556
+      ],
+      "difference_sub_minus_real": 0.03472222222222232,
+      "difference_ci": [
+        -0.04166666666666663,
+        0.11458333333333331
+      ],
+      "group": "HR - / HER2 - (TN)",
+      "metric": "relative",
+      "excluded": []
+    }
+  ]
+}

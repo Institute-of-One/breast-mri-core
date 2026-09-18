@@ -1,0 +1,40 @@
+{
+  "title": "breast-mri-core: late-phase removal and SER-filtered tumor volume in breast MRI (analysis code and derived scores)",
+  "description": "<p>Analysis code and derived scores for a study of how removing the late post-contrast phase changes signal-enhancement-ratio (SER) filtered functional tumor volume in breast MRI, and how much that change affects discrimination of pathological complete response (pCR) after neoadjuvant therapy.</p><p>The study uses the public ACRIN-6698 / I-SPY 2 collection of The Cancer Imaging Archive (BMMR2 training subset, 117 participants, pre-treatment and early-treatment visits). The directory supplementary_data_s1 is byte-identical to the manuscript's Supplementary Data S1: the paired patient scores, a script that reproduces all 20 reported AUC comparisons and outcome-stratified bootstrap intervals to within 1e-12, the frozen results, and an archival snapshot of the image-processing and analysis scripts with their plans and provenance.</p><p><strong>No MRI data is redistributed.</strong> The source images are obtained from The Cancer Imaging Archive under CC BY 4.0.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "version": "0.1.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Yamamoto, Shuji",
+      "affiliation": "Institute of One, LISIT Co., Ltd., Tokyo 150-0044, Japan",
+      "orcid": "0000-0001-9211-1071"
+    }
+  ],
+  "keywords": [
+    "breast MRI",
+    "functional tumor volume",
+    "signal enhancement ratio",
+    "abbreviated MRI",
+    "neoadjuvant therapy",
+    "pathological complete response",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Institute-of-One/breast-mri-core",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.7937/tcia.kk02-6d95",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Record the concept DOI as an isVersionOf relation once minted, and never as a top-level 'doi', which would tell Zenodo the DOI was assigned elsewhere and stop it versioning releases."
+}

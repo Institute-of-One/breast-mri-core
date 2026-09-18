@@ -1,0 +1,17 @@
+certifi==2026.7.22
+charset-normalizer==3.5.1
+cloudpickle==3.1.2
+et_xmlfile==2.0.0
+idna==3.19
+joblib==1.6.0
+narwhals==2.26.0
+numpy==2.5.3
+openpyxl==3.1.5
+pillow==12.3.0
+pydicom==3.0.2
+pypdf==6.19.0
+requests==2.34.2
+scikit-learn==1.9.1
+scipy==1.18.1
+threadpoolctl==3.7.0
+urllib3==2.8.0

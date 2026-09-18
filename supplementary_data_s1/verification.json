@@ -1,0 +1,106 @@
+{
+  "comparisons": [
+    {
+      "group": "all",
+      "metric": "T0",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "all",
+      "metric": "T1",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "all",
+      "metric": "change",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "all",
+      "metric": "relative",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR + / HER2 +",
+      "metric": "T0",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR + / HER2 +",
+      "metric": "T1",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR + / HER2 +",
+      "metric": "change",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR + / HER2 +",
+      "metric": "relative",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR + / HER2 -",
+      "metric": "T0",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR + / HER2 -",
+      "metric": "T1",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR + / HER2 -",
+      "metric": "change",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR + / HER2 -",
+      "metric": "relative",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR - / HER2 +",
+      "metric": "T0",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR - / HER2 +",
+      "metric": "T1",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR - / HER2 +",
+      "metric": "change",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR - / HER2 +",
+      "metric": "relative",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR - / HER2 - (TN)",
+      "metric": "T0",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR - / HER2 - (TN)",
+      "metric": "T1",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR - / HER2 - (TN)",
+      "metric": "change",
+      "matches_frozen_results": true
+    },
+    {
+      "group": "HR - / HER2 - (TN)",
+      "metric": "relative",
+      "matches_frozen_results": true
+    }
+  ],
+  "all_match": true,
+  "absolute_tolerance": 1e-12
+}

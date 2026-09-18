@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software or its derived data, please cite it using this metadata."
+title: "breast-mri-core: late-phase removal and SER-filtered tumor volume in breast MRI (analysis code and derived scores)"
+type: software
+version: 0.1.0
+date-released: "2026-09-18"
+license: MIT
+repository-code: "https://github.com/Institute-of-One/breast-mri-core"
+abstract: >-
+  Analysis code and derived scores for a study of how removing the late post-contrast
+  phase changes signal-enhancement-ratio-filtered functional tumor volume in breast MRI,
+  and how much that change affects discrimination of pathological complete response.
+  Uses the public ACRIN-6698 / I-SPY 2 collection of The Cancer Imaging Archive (BMMR2
+  training subset, 117 participants). Contains the paired patient scores, a script that
+  reproduces all 20 reported AUC comparisons and bootstrap intervals to within 1e-12, and
+  an archival snapshot of the image-processing and analysis scripts. No MRI data.
+authors:
+  - family-names: Yamamoto
+    given-names: Shuji
+    orcid: "https://orcid.org/0000-0001-9211-1071"
+    affiliation: "Institute of One, LISIT Co., Ltd., Tokyo 150-0044, Japan"
+keywords:
+  - breast MRI
+  - functional tumor volume
+  - signal enhancement ratio
+  - abbreviated MRI
+  - neoadjuvant therapy
+  - pathological complete response
+  - reproducible research
+references:
+  - type: data
+    title: "ACRIN 6698/I-SPY2 Breast DWI"
+    authors:
+      - family-names: Newitt
+        given-names: David C.
+    year: 2021
+    publisher:
+      name: "The Cancer Imaging Archive"
+    doi: "10.7937/tcia.kk02-6d95"
+    license: CC-BY-4.0
