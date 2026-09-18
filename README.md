@@ -48,6 +48,22 @@ the pinned versions in `requirements.lock.txt`, and CI repeats it, together with
 checksum check, on every push. `requirements-report.lock.txt` adds the plotting stack
 used to draw the figures.
 
+## Why the AUC barely moves: the pair decomposition
+
+`analysis/rank_mechanism.py` explains the main result from the same paired scores. An AUC
+is the fraction of (pCR, non-pCR) pairs a score orders correctly, so the change in AUC is
+exactly the mean change in pair concordance. The script counts the pairs whose order the
+substitution changes, overall and within each receptor subtype, and compares the spread
+of the log substituted volume with the spread of the log retained fraction. It first
+recomputes the frozen AUCs and requires them to match `auc_results.json` to within 1e-12.
+
+```
+python analysis/rank_mechanism.py      # writes analysis/rank_mechanism.json
+```
+
+This analysis is descriptive and was specified after the AUC results were known. CI
+reruns it and checks the output against the committed `analysis/rank_mechanism.json`.
+
 ## What is not here
 
 No MRI data. The image-processing scripts in `source_snapshot/` read the original TCIA

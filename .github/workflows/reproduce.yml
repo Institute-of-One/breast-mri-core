@@ -33,3 +33,21 @@ jobs:
       - name: Reproduce all 20 AUC comparisons and intervals
         working-directory: supplementary_data_s1
         run: python reproduce_auc.py
+      - name: Pair decomposition reproduces the committed result
+        run: |
+          cp analysis/rank_mechanism.json /tmp/committed.json
+          python analysis/rank_mechanism.py
+          python - <<'PY'
+          import json, math
+          a = json.load(open("/tmp/committed.json")); b = json.load(open("analysis/rank_mechanism.json"))
+          def same(x, y, path="$"):
+              if isinstance(x, dict):
+                  assert x.keys() == y.keys(), path
+                  for k in x: same(x[k], y[k], f"{path}.{k}")
+              elif isinstance(x, float) or isinstance(y, float):
+                  assert math.isclose(x, y, rel_tol=0, abs_tol=1e-12), (path, x, y)
+              else:
+                  assert x == y, (path, x, y)
+          same(a, b)
+          print("analysis/rank_mechanism.json reproduced to within 1e-12")
+          PY
