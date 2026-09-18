@@ -12,7 +12,7 @@ abstract: >-
   and how much that change affects discrimination of pathological complete response.
   Uses the public ACRIN-6698 / I-SPY 2 collection of The Cancer Imaging Archive (BMMR2
   training subset, 117 participants). Contains the paired patient scores, a script that
-  reproduces all 20 reported AUC comparisons and bootstrap intervals to within 1e-12, and
+  reproduces all 20 reported AUC comparisons and bootstrap intervals to within 1e-12,
   an archival snapshot of the image-processing and analysis scripts, and a decomposition of
   each AUC difference into the patient pairs it reorders. No MRI data.
 authors:
