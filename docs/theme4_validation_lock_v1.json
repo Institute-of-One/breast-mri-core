@@ -1,0 +1,100 @@
+{
+  "plan": "docs/theme4_validation_plan_v1.md",
+  "plan_sha256": "cebf34db3b6dd2b278f188951dc8008236ab3e70e15e1bfadc0e3273c36cde98",
+  "cohort_file": "docs/theme4_validation_cohort_v1.json",
+  "cohort_sha256": "037eaaa1e82fde95b732de96c8f90ef06a40f1b4a035ff9cc609120b843df55e",
+  "n": 110,
+  "n_pcr": 35,
+  "n_non_pcr": 75,
+  "pairs": 2625,
+  "seed": 20261111,
+  "bootstrap_samples": 10000,
+  "pipeline_sha256": {
+    "scripts/theme4_full_cohort.py": "c2c5821303d83490bf79133d12fe44e359b6bcb9ee64b71dcd2a2c0128781966",
+    "scripts/theme3_ftv.py": "a4e235f3c9d9cdb7010fbfa41758a240bdbfd97f684dacbbb7f4e9efcbaeaf32",
+    "scripts/theme3_restore_philips.py": "e0a6d285155c78af153ee1a8fbe088b1e0bcc0ce0cd5fc14ae89a5a18c37c8b9",
+    "scripts/theme3_extract_development.py": "f09d86a6505339b558bcfb456b93d1438050005c12921b0fa8e88fbc49d84be7"
+  },
+  "ancillary_file_sha256": "48e23e6eb111d03ca9c6171ab8ac4f4a39df2ca44e381a250312ec1b5e105f9f",
+  "discovery": {
+    "relative": {
+      "auc_real": 0.6461,
+      "auc_sub": 0.6529,
+      "difference": 0.0069,
+      "ci": [
+        -0.043,
+        0.056
+      ],
+      "fraction_pairs_changed": 0.12,
+      "spearman": 0.9211
+    },
+    "T0": {
+      "auc_real": 0.6591,
+      "auc_sub": 0.6722,
+      "difference": 0.013,
+      "ci": [
+        -0.026,
+        0.051
+      ],
+      "fraction_pairs_changed": 0.0844,
+      "spearman": 0.9459
+    },
+    "T1": {
+      "auc_real": 0.7126,
+      "auc_sub": 0.703,
+      "difference": -0.0096,
+      "ci": [
+        -0.068,
+        0.043
+      ],
+      "fraction_pairs_changed": 0.1221,
+      "spearman": 0.9139
+    }
+  },
+  "criteria": {
+    "C1_primary_difference_within_discovery_ci": {
+      "endpoint": "relative",
+      "ci": [
+        -0.043,
+        0.056
+      ]
+    },
+    "C2_difference_magnitude": {
+      "endpoints": [
+        "relative",
+        "T0",
+        "T1"
+      ],
+      "max_abs": 0.05
+    },
+    "C3_pairs_changed_band": {
+      "endpoints": [
+        "relative",
+        "T0",
+        "T1"
+      ],
+      "tolerance_percentage_points": 5.0
+    },
+    "C4_volume_inflation": {
+      "min_fraction_ge_10pct": 0.9,
+      "visits": [
+        "T0",
+        "T1"
+      ]
+    },
+    "C5_spearman": {
+      "endpoints": [
+        "relative",
+        "T0",
+        "T1"
+      ],
+      "min": 0.85
+    }
+  },
+  "manufacturer_map": {
+    "Philips Healthcare": "Philips Medical Systems",
+    "Philips Medical Systems": "Philips Medical Systems",
+    "GE MEDICAL SYSTEMS": "GE MEDICAL SYSTEMS",
+    "SIEMENS": "SIEMENS"
+  }
+}
