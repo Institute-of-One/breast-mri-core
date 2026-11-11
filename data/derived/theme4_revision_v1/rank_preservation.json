@@ -1,0 +1,45 @@
+{
+  "source": "data/derived/theme4_pcr_v1/paired_scores.csv",
+  "n_participants": 117,
+  "condition": "a pair keeps its order iff dX*(dX+dY) > 0, with X = log V_sub and Y = log(V_real/V_sub); the spread of Y alone is neither necessary nor sufficient",
+  "visits": {
+    "T0": {
+      "n_log": 117,
+      "n_excluded_zero_measured_volume": 0,
+      "sd_log_sub_volume": 1.175154194561539,
+      "sd_log_retained_fraction": 0.3816290226902348,
+      "ratio_sd_log": 0.32474804111355293,
+      "corr_log_sub_vs_log_retained": -0.28728426459319856,
+      "spearman_real_vs_sub": 0.9458631179846843,
+      "kendall_tau_b_real_vs_sub": 0.8261125847332744,
+      "pairs": 6786,
+      "reversed": 590,
+      "fraction_reversed": 0.0869437076333628,
+      "tied_after": 0,
+      "pairs_with_dY_opposed_to_dX": 4193,
+      "fraction_dY_opposed": 0.6178897730621868,
+      "pairs_with_abs_dY_exceeding_abs_dX": 1066,
+      "fraction_abs_dY_exceeds": 0.15708812260536398,
+      "predicted_by_magnitude_alone_but_not_reversed": 476
+    },
+    "T1": {
+      "n_log": 115,
+      "n_excluded_zero_measured_volume": 2,
+      "sd_log_sub_volume": 1.55119735727884,
+      "sd_log_retained_fraction": 0.5777065904160109,
+      "ratio_sd_log": 0.3724262342926127,
+      "corr_log_sub_vs_log_retained": -0.12461562960609002,
+      "spearman_real_vs_sub": 0.9092795707409453,
+      "kendall_tau_b_real_vs_sub": 0.7568268497330283,
+      "pairs": 6555,
+      "reversed": 797,
+      "fraction_reversed": 0.12158657513348589,
+      "tied_after": 0,
+      "pairs_with_dY_opposed_to_dX": 3760,
+      "fraction_dY_opposed": 0.5736079328756675,
+      "pairs_with_abs_dY_exceeding_abs_dX": 1441,
+      "fraction_abs_dY_exceeds": 0.2198321891685736,
+      "predicted_by_magnitude_alone_but_not_reversed": 644
+    }
+  }
+}

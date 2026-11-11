@@ -1,0 +1,514 @@
+{
+  "scope": "post hoc; Referee 1 point 6",
+  "n": 117,
+  "n_pcr": 36,
+  "seed": 20260918,
+  "bootstrap": 10000,
+  "reference_subtype": "HR + / HER2 -",
+  "subtypes": {
+    "HR + / HER2 +": {
+      "n": 20,
+      "pcr": 8,
+      "pcr_rate": 0.4
+    },
+    "HR + / HER2 -": {
+      "n": 51,
+      "pcr": 8,
+      "pcr_rate": 0.1568627450980392
+    },
+    "HR - / HER2 +": {
+      "n": 10,
+      "pcr": 8,
+      "pcr_rate": 0.8
+    },
+    "HR - / HER2 - (TN)": {
+      "n": 36,
+      "pcr": 12,
+      "pcr_rate": 0.3333333333333333
+    }
+  },
+  "logistic_note": "a very low penalty approximates an unpenalised fit; the log-likelihood is computed from the fitted probabilities, not read from the library",
+  "cross_validation": {
+    "scheme": "stratified 10-fold",
+    "seed": 20260918,
+    "applied_to": "models that combine predictors only"
+  },
+  "endpoints": {
+    "T0": {
+      "score_vs_subtype": {
+        "real": {
+          "kruskal_statistic": 1.9178157834190301,
+          "p_value": 0.5896382980243273,
+          "median_by_subtype": {
+            "HR + / HER2 +": -4.521829543840822,
+            "HR + / HER2 -": -6.819712944499999,
+            "HR - / HER2 +": -4.887128449372007,
+            "HR - / HER2 - (TN)": -7.06089965038194
+          }
+        },
+        "sub": {
+          "kruskal_statistic": 2.1507980332506804,
+          "p_value": 0.5417045256593647,
+          "median_by_subtype": {
+            "HR + / HER2 +": -6.437421941559677,
+            "HR + / HER2 -": -10.993089095208013,
+            "HR - / HER2 +": -6.532930295720001,
+            "HR - / HER2 - (TN)": -12.70837554069297
+          }
+        }
+      },
+      "arms": {
+        "real": {
+          "coefficient_per_sd_unadjusted": 0.735388986105255,
+          "odds_ratio_per_sd_unadjusted": 2.08629337382067,
+          "coefficient_per_sd_adjusted": 1.100544927678027,
+          "odds_ratio_per_sd_adjusted": 3.0058035232811045,
+          "subtype_coefficients": {
+            "HR + / HER2 +": 1.350065581650291,
+            "HR - / HER2 +": 3.8835762340706625,
+            "HR - / HER2 - (TN)": 1.1944036009364387
+          },
+          "likelihood_ratio_vs_subtype_only": {
+            "statistic": 10.883175526707035,
+            "df": 1,
+            "p_value": 0.0009704172397822596
+          },
+          "auc_score_only": 0.659122085048011,
+          "auc_score_only_note": "the score's own concordance; a one-predictor logistic model is a monotone transform of it, so there is nothing to cross-validate",
+          "cross_validated_auc_subtype_only": 0.6286008230452675,
+          "cross_validated_auc_score_and_subtype": 0.7390260631001372
+        },
+        "sub": {
+          "coefficient_per_sd_unadjusted": 0.7355974703242708,
+          "odds_ratio_per_sd_unadjusted": 2.086728378409569,
+          "coefficient_per_sd_adjusted": 1.0249471248469368,
+          "odds_ratio_per_sd_adjusted": 2.7869480963627584,
+          "subtype_coefficients": {
+            "HR + / HER2 +": 1.387972795591055,
+            "HR - / HER2 +": 3.852352882497303,
+            "HR - / HER2 - (TN)": 1.2483459520135038
+          },
+          "likelihood_ratio_vs_subtype_only": {
+            "statistic": 12.198530557539996,
+            "df": 1,
+            "p_value": 0.0004782717401091468
+          },
+          "auc_score_only": 0.6721536351165981,
+          "auc_score_only_note": "the score's own concordance; a one-predictor logistic model is a monotone transform of it, so there is nothing to cross-validate",
+          "cross_validated_auc_subtype_only": 0.6286008230452675,
+          "cross_validated_auc_score_and_subtype": 0.7465706447187929
+        }
+      },
+      "concordance": {
+        "unadjusted": {
+          "real": 0.659122085048011,
+          "sub": 0.6721536351165981,
+          "difference_sub_minus_real": 0.013031550068587139,
+          "pairs": 2916
+        },
+        "within_subtype": {
+          "real": 0.6559139784946236,
+          "sub": 0.6586021505376344,
+          "difference_sub_minus_real": 0.0026881720430107503,
+          "pairs": 744,
+          "pairs_discarded": 2172
+        },
+        "within_subtype_bootstrap": {
+          "real_ci": [
+            0.5268817204301075,
+            0.7795698924731183
+          ],
+          "sub_ci": [
+            0.5268817204301075,
+            0.7849462365591398
+          ],
+          "difference_ci": [
+            -0.04573252688172047,
+            0.045698924731182866
+          ],
+          "replicates": 10000,
+          "smallest_cell": 2
+        },
+        "per_subtype": {
+          "HR + / HER2 +": {
+            "real": 0.6979166666666666,
+            "sub": 0.7395833333333334,
+            "pairs": 96
+          },
+          "HR + / HER2 -": {
+            "real": 0.5290697674418605,
+            "sub": 0.5581395348837209,
+            "pairs": 344
+          },
+          "HR - / HER2 +": {
+            "real": 0.625,
+            "sub": 0.5625,
+            "pairs": 16
+          },
+          "HR - / HER2 - (TN)": {
+            "real": 0.7951388888888888,
+            "sub": 0.7569444444444444,
+            "pairs": 288
+          }
+        }
+      }
+    },
+    "T1": {
+      "score_vs_subtype": {
+        "real": {
+          "kruskal_statistic": 11.000300122471817,
+          "p_value": 0.011724252813355613,
+          "median_by_subtype": {
+            "HR + / HER2 +": -1.379747683184501,
+            "HR + / HER2 -": -2.9447741680000004,
+            "HR - / HER2 +": -1.4049985275381118,
+            "HR - / HER2 - (TN)": -3.404242515563965
+          }
+        },
+        "sub": {
+          "kruskal_statistic": 7.7693824439716765,
+          "p_value": 0.05102625044700831,
+          "median_by_subtype": {
+            "HR + / HER2 +": -2.382084808572003,
+            "HR + / HER2 -": -7.46640625,
+            "HR - / HER2 +": -3.7570860877065293,
+            "HR - / HER2 - (TN)": -7.4911215577500005
+          }
+        }
+      },
+      "arms": {
+        "real": {
+          "coefficient_per_sd_unadjusted": 2.800149046368393,
+          "odds_ratio_per_sd_unadjusted": 16.447097968644293,
+          "coefficient_per_sd_adjusted": 2.8616789319993043,
+          "odds_ratio_per_sd_adjusted": 17.490868277075947,
+          "subtype_coefficients": {
+            "HR + / HER2 +": 0.9709265701261454,
+            "HR - / HER2 +": 3.0780483925316022,
+            "HR - / HER2 - (TN)": 1.2681059049762349
+          },
+          "likelihood_ratio_vs_subtype_only": {
+            "statistic": 13.44682187741381,
+            "df": 1,
+            "p_value": 0.00024542157561976383
+          },
+          "auc_score_only": 0.7126200274348422,
+          "auc_score_only_note": "the score's own concordance; a one-predictor logistic model is a monotone transform of it, so there is nothing to cross-validate",
+          "cross_validated_auc_subtype_only": 0.6286008230452675,
+          "cross_validated_auc_score_and_subtype": 0.7455418381344308
+        },
+        "sub": {
+          "coefficient_per_sd_unadjusted": 1.5182646539703595,
+          "odds_ratio_per_sd_unadjusted": 4.564297682781123,
+          "coefficient_per_sd_adjusted": 1.781832080081986,
+          "odds_ratio_per_sd_adjusted": 5.940730348338191,
+          "subtype_coefficients": {
+            "HR + / HER2 +": 1.0570803921208627,
+            "HR - / HER2 +": 3.3360683056549663,
+            "HR - / HER2 - (TN)": 1.279393713335013
+          },
+          "likelihood_ratio_vs_subtype_only": {
+            "statistic": 12.004032375559404,
+            "df": 1,
+            "p_value": 0.0005308556600842914
+          },
+          "auc_score_only": 0.7030178326474623,
+          "auc_score_only_note": "the score's own concordance; a one-predictor logistic model is a monotone transform of it, so there is nothing to cross-validate",
+          "cross_validated_auc_subtype_only": 0.6286008230452675,
+          "cross_validated_auc_score_and_subtype": 0.7338820301783264
+        }
+      },
+      "concordance": {
+        "unadjusted": {
+          "real": 0.7126200274348422,
+          "sub": 0.7030178326474623,
+          "difference_sub_minus_real": -0.009602194787379892,
+          "pairs": 2916
+        },
+        "within_subtype": {
+          "real": 0.6841397849462365,
+          "sub": 0.6854838709677419,
+          "difference_sub_minus_real": 0.0013440860215053752,
+          "pairs": 744,
+          "pairs_discarded": 2172
+        },
+        "within_subtype_bootstrap": {
+          "real_ci": [
+            0.5577956989247311,
+            0.803763440860215
+          ],
+          "sub_ci": [
+            0.5577956989247311,
+            0.8051075268817204
+          ],
+          "difference_ci": [
+            -0.06182795698924726,
+            0.06048387096774199
+          ],
+          "replicates": 10000,
+          "smallest_cell": 2
+        },
+        "per_subtype": {
+          "HR + / HER2 +": {
+            "real": 0.7604166666666666,
+            "sub": 0.7708333333333334,
+            "pairs": 96
+          },
+          "HR + / HER2 -": {
+            "real": 0.622093023255814,
+            "sub": 0.6017441860465116,
+            "pairs": 344
+          },
+          "HR - / HER2 +": {
+            "real": 0.9375,
+            "sub": 0.75,
+            "pairs": 16
+          },
+          "HR - / HER2 - (TN)": {
+            "real": 0.71875,
+            "sub": 0.7534722222222222,
+            "pairs": 288
+          }
+        }
+      }
+    },
+    "change": {
+      "score_vs_subtype": {
+        "real": {
+          "kruskal_statistic": 0.7424779791679157,
+          "p_value": 0.8631700833557363,
+          "median_by_subtype": {
+            "HR + / HER2 +": 3.1689843750000044,
+            "HR + / HER2 -": 3.0713215684999997,
+            "HR - / HER2 +": 3.8797304415700062,
+            "HR - / HER2 - (TN)": 3.7476996242493605
+          }
+        },
+        "sub": {
+          "kruskal_statistic": 1.3515572939301705,
+          "p_value": 0.7169281950696524,
+          "median_by_subtype": {
+            "HR + / HER2 +": 3.5430052428880034,
+            "HR + / HER2 -": 3.9750652140100886,
+            "HR - / HER2 +": 5.329842308076007,
+            "HR - / HER2 - (TN)": 5.108374526550502
+          }
+        }
+      },
+      "arms": {
+        "real": {
+          "coefficient_per_sd_unadjusted": -0.051266690838495235,
+          "odds_ratio_per_sd_unadjusted": 0.9500252737077862,
+          "coefficient_per_sd_adjusted": -0.20655644753802704,
+          "odds_ratio_per_sd_adjusted": 0.813380346843031,
+          "subtype_coefficients": {
+            "HR + / HER2 +": 1.3185262861068137,
+            "HR - / HER2 +": 3.214809851963486,
+            "HR - / HER2 - (TN)": 0.9777432508896261
+          },
+          "likelihood_ratio_vs_subtype_only": {
+            "statistic": 0.9034426024189628,
+            "df": 1,
+            "p_value": 0.3418602970590179
+          },
+          "auc_score_only": 0.45953360768175583,
+          "auc_score_only_note": "the score's own concordance; a one-predictor logistic model is a monotone transform of it, so there is nothing to cross-validate",
+          "cross_validated_auc_subtype_only": 0.6286008230452675,
+          "cross_validated_auc_score_and_subtype": 0.6580932784636488
+        },
+        "sub": {
+          "coefficient_per_sd_unadjusted": -0.08622669202186736,
+          "odds_ratio_per_sd_unadjusted": 0.9173862435040905,
+          "coefficient_per_sd_adjusted": -0.2226935303225677,
+          "odds_ratio_per_sd_adjusted": 0.8003600978130239,
+          "subtype_coefficients": {
+            "HR + / HER2 +": 1.3331473751615959,
+            "HR - / HER2 +": 3.1951224865859267,
+            "HR - / HER2 - (TN)": 0.9898349415461082
+          },
+          "likelihood_ratio_vs_subtype_only": {
+            "statistic": 1.0803138193249566,
+            "df": 1,
+            "p_value": 0.29862736308692067
+          },
+          "auc_score_only": 0.46330589849108367,
+          "auc_score_only_note": "the score's own concordance; a one-predictor logistic model is a monotone transform of it, so there is nothing to cross-validate",
+          "cross_validated_auc_subtype_only": 0.6286008230452675,
+          "cross_validated_auc_score_and_subtype": 0.6580932784636488
+        }
+      },
+      "concordance": {
+        "unadjusted": {
+          "real": 0.45953360768175583,
+          "sub": 0.46330589849108367,
+          "difference_sub_minus_real": 0.0037722908093278384,
+          "pairs": 2916
+        },
+        "within_subtype": {
+          "real": 0.4368279569892473,
+          "sub": 0.4543010752688172,
+          "difference_sub_minus_real": 0.017473118279569877,
+          "pairs": 744,
+          "pairs_discarded": 2172
+        },
+        "within_subtype_bootstrap": {
+          "real_ci": [
+            0.3118279569892473,
+            0.5672043010752689
+          ],
+          "sub_ci": [
+            0.32526881720430106,
+            0.5873655913978495
+          ],
+          "difference_ci": [
+            -0.045698924731182755,
+            0.08333333333333331
+          ],
+          "replicates": 10000,
+          "smallest_cell": 2
+        },
+        "per_subtype": {
+          "HR + / HER2 +": {
+            "real": 0.3854166666666667,
+            "sub": 0.34375,
+            "pairs": 96
+          },
+          "HR + / HER2 -": {
+            "real": 0.49709302325581395,
+            "sub": 0.45930232558139533,
+            "pairs": 344
+          },
+          "HR - / HER2 +": {
+            "real": 0.625,
+            "sub": 0.5625,
+            "pairs": 16
+          },
+          "HR - / HER2 - (TN)": {
+            "real": 0.3715277777777778,
+            "sub": 0.4791666666666667,
+            "pairs": 288
+          }
+        }
+      }
+    },
+    "relative": {
+      "score_vs_subtype": {
+        "real": {
+          "kruskal_statistic": 12.156880880170577,
+          "p_value": 0.006864626032501559,
+          "median_by_subtype": {
+            "HR + / HER2 +": 0.808220920770693,
+            "HR + / HER2 -": 0.539156626506024,
+            "HR - / HER2 +": 0.738664560861379,
+            "HR - / HER2 - (TN)": 0.4163384312203128
+          }
+        },
+        "sub": {
+          "kruskal_statistic": 11.859408078187982,
+          "p_value": 0.007880618881849722,
+          "median_by_subtype": {
+            "HR + / HER2 +": 0.7485860709807763,
+            "HR + / HER2 -": 0.42338815738577457,
+            "HR - / HER2 +": 0.6613924328598144,
+            "HR - / HER2 - (TN)": 0.35860067068907664
+          }
+        }
+      },
+      "arms": {
+        "real": {
+          "coefficient_per_sd_unadjusted": 0.7075864579192758,
+          "odds_ratio_per_sd_unadjusted": 2.0290880545770302,
+          "coefficient_per_sd_adjusted": 0.6261354930062104,
+          "odds_ratio_per_sd_adjusted": 1.8703685425129628,
+          "subtype_coefficients": {
+            "HR + / HER2 +": 1.0962874706638575,
+            "HR - / HER2 +": 2.920236602435865,
+            "HR - / HER2 - (TN)": 1.1050798134402238
+          },
+          "likelihood_ratio_vs_subtype_only": {
+            "statistic": 4.264522790349474,
+            "df": 1,
+            "p_value": 0.038916178540819794
+          },
+          "auc_score_only": 0.6460905349794238,
+          "auc_score_only_note": "the score's own concordance; a one-predictor logistic model is a monotone transform of it, so there is nothing to cross-validate",
+          "cross_validated_auc_subtype_only": 0.6286008230452675,
+          "cross_validated_auc_score_and_subtype": 0.6844993141289437
+        },
+        "sub": {
+          "coefficient_per_sd_unadjusted": 0.6463826493066149,
+          "odds_ratio_per_sd_unadjusted": 1.9086241636122245,
+          "coefficient_per_sd_adjusted": 0.5038154875391937,
+          "odds_ratio_per_sd_adjusted": 1.6550239624387995,
+          "subtype_coefficients": {
+            "HR + / HER2 +": 1.1076577547503972,
+            "HR - / HER2 +": 2.893013586552412,
+            "HR - / HER2 - (TN)": 1.0599644134947626
+          },
+          "likelihood_ratio_vs_subtype_only": {
+            "statistic": 3.1798698758487234,
+            "df": 1,
+            "p_value": 0.07455066651180808
+          },
+          "auc_score_only": 0.6529492455418381,
+          "auc_score_only_note": "the score's own concordance; a one-predictor logistic model is a monotone transform of it, so there is nothing to cross-validate",
+          "cross_validated_auc_subtype_only": 0.6286008230452675,
+          "cross_validated_auc_score_and_subtype": 0.6838134430727023
+        }
+      },
+      "concordance": {
+        "unadjusted": {
+          "real": 0.6460905349794238,
+          "sub": 0.6529492455418381,
+          "difference_sub_minus_real": 0.006858710562414272,
+          "pairs": 2916
+        },
+        "within_subtype": {
+          "real": 0.6075268817204301,
+          "sub": 0.5981182795698925,
+          "difference_sub_minus_real": -0.009408602150537626,
+          "pairs": 744,
+          "pairs_discarded": 2172
+        },
+        "within_subtype_bootstrap": {
+          "real_ci": [
+            0.4596774193548387,
+            0.7446236559139785
+          ],
+          "sub_ci": [
+            0.46639784946236557,
+            0.7244623655913979
+          ],
+          "difference_ci": [
+            -0.081989247311828,
+            0.06317204301075269
+          ],
+          "replicates": 10000,
+          "smallest_cell": 2
+        },
+        "per_subtype": {
+          "HR + / HER2 +": {
+            "real": 0.5520833333333334,
+            "sub": 0.5208333333333334,
+            "pairs": 96
+          },
+          "HR + / HER2 -": {
+            "real": 0.627906976744186,
+            "sub": 0.5843023255813954,
+            "pairs": 344
+          },
+          "HR - / HER2 +": {
+            "real": 0.875,
+            "sub": 0.9375,
+            "pairs": 16
+          },
+          "HR - / HER2 - (TN)": {
+            "real": 0.5868055555555556,
+            "sub": 0.6215277777777778,
+            "pairs": 288
+          }
+        }
+      }
+    }
+  }
+}

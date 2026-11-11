@@ -1,0 +1,83 @@
+{
+  "patient_id": "ACRIN-6698-221686",
+  "visit": "T1",
+  "status": "complete",
+  "precision": "published_crop",
+  "endpoint": "reference-mask-conditioned SER volume",
+  "mask_sha256": "366209aa700f31d2a44a5cfc47f4d1900f376c20c7204b42c2566138b32f9807",
+  "stored": {
+    "pe": {
+      "label": "FTVpe(PEearly>70%)",
+      "lower": 0.0,
+      "upper": 3.0,
+      "count": 9557,
+      "volume_cc": 7.46640625
+    },
+    "ser": {
+      "label": "FTVser(PEearly>70%, SER>0.9)",
+      "lower": 0.8999999762,
+      "upper": 3.0,
+      "count": 2930,
+      "volume_cc": 2.2890625
+    }
+  },
+  "calculated": {
+    "pe": {
+      "count": 9557,
+      "volume_cc": 7.46640625,
+      "eligible_voxels": 9557,
+      "fraction_above_threshold": 1.0,
+      "capped_SER_quantiles_0_25_50_75_100": [
+        0.31017770597738287,
+        0.6834075015893197,
+        0.7960050998725032,
+        0.9375624375624375,
+        3.0
+      ],
+      "zero_denominator_in_mask": 0,
+      "negative_denominator_in_mask": 0
+    },
+    "ser": {
+      "count": 2930,
+      "volume_cc": 2.2890625,
+      "eligible_voxels": 9557,
+      "fraction_above_threshold": 0.30658156325206654,
+      "capped_SER_quantiles_0_25_50_75_100": [
+        0.31017770597738287,
+        0.6834075015893197,
+        0.7960050998725032,
+        0.9375624375624375,
+        3.0
+      ],
+      "zero_denominator_in_mask": 0,
+      "negative_denominator_in_mask": 0
+    }
+  },
+  "substitution": {
+    "count": 9557,
+    "volume_cc": 7.46640625,
+    "eligible_voxels": 9557,
+    "fraction_above_threshold": 1.0,
+    "capped_SER_quantiles_0_25_50_75_100": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "zero_denominator_in_mask": 0,
+    "negative_denominator_in_mask": 0
+  },
+  "exact_match": true,
+  "within_tolerance": true,
+  "real_cc": 2.2890625,
+  "sub_cc": 7.46640625,
+  "difference_cc": 5.17734375,
+  "retention_real_over_sub": 0.30658156325206654,
+  "relative_difference": 2.2617747440273037,
+  "abs_ge10": true,
+  "over_ge10": true,
+  "under_ge10": false,
+  "unknown_bit16": true,
+  "zero_reference": false
+}

@@ -1,0 +1,2875 @@
+{
+  "n": 117,
+  "n_pcr": 36,
+  "seed": 20260918,
+  "bootstrap": 10000,
+  "cross_validation": {
+    "scheme": "stratified 10-fold",
+    "seed": 20260918
+  },
+  "note": "post hoc; the decision curve and calibration use a cross-validated single-predictor logistic model that the primary analysis does not use",
+  "endpoints": {
+    "T0": {
+      "auc_real": 0.659122085048011,
+      "auc_sub": 0.6721536351165981,
+      "operating_points": {
+        "specificity_0.80": {
+          "real": {
+            "sensitivity": 0.3888888888888889,
+            "specificity": 0.8024691358024691,
+            "threshold": -3.2913572302799996
+          },
+          "sub": {
+            "sensitivity": 0.3611111111111111,
+            "specificity": 0.8024691358024691,
+            "threshold": -5.156165302222006
+          },
+          "sensitivity_difference": -0.02777777777777779,
+          "bootstrap": {
+            "sensitivity_real_ci": [
+              0.19444444444444445,
+              0.5555555555555556
+            ],
+            "sensitivity_sub_ci": [
+              0.19444444444444445,
+              0.6666666666666666
+            ],
+            "difference_ci": [
+              -0.13888888888888887,
+              0.22222222222222227
+            ],
+            "replicates": 10000
+          },
+          "reclassification": {
+            "pCR": {
+              "n": 36,
+              "positive_to_negative": 2,
+              "negative_to_positive": 1,
+              "unchanged": 33
+            },
+            "non_pCR": {
+              "n": 81,
+              "positive_to_negative": 2,
+              "negative_to_positive": 2,
+              "unchanged": 77
+            },
+            "any_change": 7
+          }
+        },
+        "specificity_0.90": {
+          "real": {
+            "sensitivity": 0.19444444444444445,
+            "specificity": 0.9012345679012346,
+            "threshold": -1.8528502365720045
+          },
+          "sub": {
+            "sensitivity": 0.2222222222222222,
+            "specificity": 0.9012345679012346,
+            "threshold": -3.5207579224199987
+          },
+          "sensitivity_difference": 0.027777777777777762,
+          "bootstrap": {
+            "sensitivity_real_ci": [
+              0.05555555555555555,
+              0.4444444444444444
+            ],
+            "sensitivity_sub_ci": [
+              0.027777777777777776,
+              0.4166666666666667
+            ],
+            "difference_ci": [
+              -0.13958333333333275,
+              0.1388888888888889
+            ],
+            "replicates": 10000
+          },
+          "reclassification": {
+            "pCR": {
+              "n": 36,
+              "positive_to_negative": 0,
+              "negative_to_positive": 1,
+              "unchanged": 35
+            },
+            "non_pCR": {
+              "n": 81,
+              "positive_to_negative": 2,
+              "negative_to_positive": 2,
+              "unchanged": 77
+            },
+            "any_change": 5
+          }
+        }
+      },
+      "calibration": {
+        "real": {
+          "slope": 0.711488081612048,
+          "intercept": -0.20899736948439845,
+          "mean_predicted": 0.306563579326671,
+          "observed_rate": 0.3076923076923077,
+          "note": "slope 1 and intercept 0 is perfect; a slope below 1 means the predictions are too extreme"
+        },
+        "sub": {
+          "slope": 0.7772338295211161,
+          "intercept": -0.15845342253621264,
+          "mean_predicted": 0.3068228542672921,
+          "observed_rate": 0.3076923076923077,
+          "note": "slope 1 and intercept 0 is perfect; a slope below 1 means the predictions are too extreme"
+        }
+      },
+      "decision_curve": {
+        "real": [
+          {
+            "threshold": 0.05,
+            "net_benefit": 0.26450742240215924,
+            "treat_all": 0.27125506072874495,
+            "called_positive": 112
+          },
+          {
+            "threshold": 0.060000000000000005,
+            "net_benefit": 0.25713766139298055,
+            "treat_all": 0.2635024549918167,
+            "called_positive": 112
+          },
+          {
+            "threshold": 0.07,
+            "net_benefit": 0.24960941089973346,
+            "treat_all": 0.2555831265508685,
+            "called_positive": 112
+          },
+          {
+            "threshold": 0.08000000000000002,
+            "net_benefit": 0.24340393905611293,
+            "treat_all": 0.24749163879598662,
+            "called_positive": 110
+          },
+          {
+            "threshold": 0.09000000000000001,
+            "net_benefit": 0.23659246736169812,
+            "treat_all": 0.23922231614539308,
+            "called_positive": 109
+          },
+          {
+            "threshold": 0.1,
+            "net_benefit": 0.22981956315289648,
+            "treat_all": 0.23076923076923078,
+            "called_positive": 108
+          },
+          {
+            "threshold": 0.11000000000000001,
+            "net_benefit": 0.22203015461442427,
+            "treat_all": 0.22212618841832327,
+            "called_positive": 108
+          },
+          {
+            "threshold": 0.12000000000000001,
+            "net_benefit": 0.2066822066822067,
+            "treat_all": 0.21328671328671328,
+            "called_positive": 106
+          },
+          {
+            "threshold": 0.13,
+            "net_benefit": 0.19992140681795856,
+            "treat_all": 0.20424403183023873,
+            "called_positive": 105
+          },
+          {
+            "threshold": 0.14,
+            "net_benefit": 0.19181077320612205,
+            "treat_all": 0.19499105545617174,
+            "called_positive": 105
+          },
+          {
+            "threshold": 0.15000000000000002,
+            "net_benefit": 0.18652589240824535,
+            "treat_all": 0.18552036199095023,
+            "called_positive": 103
+          },
+          {
+            "threshold": 0.16000000000000003,
+            "net_benefit": 0.17989417989417988,
+            "treat_all": 0.1758241758241758,
+            "called_positive": 102
+          },
+          {
+            "threshold": 0.17000000000000004,
+            "net_benefit": 0.1733086190917516,
+            "treat_all": 0.16589434661723818,
+            "called_positive": 101
+          },
+          {
+            "threshold": 0.18000000000000005,
+            "net_benefit": 0.15634771732332703,
+            "treat_all": 0.15572232645403372,
+            "called_positive": 100
+          },
+          {
+            "threshold": 0.19,
+            "net_benefit": 0.14772607365199958,
+            "treat_all": 0.14529914529914534,
+            "called_positive": 100
+          },
+          {
+            "threshold": 0.2,
+            "net_benefit": 0.1324786324786325,
+            "treat_all": 0.13461538461538464,
+            "called_positive": 98
+          },
+          {
+            "threshold": 0.21000000000000002,
+            "net_benefit": 0.12582494860975874,
+            "treat_all": 0.12366114897760466,
+            "called_positive": 97
+          },
+          {
+            "threshold": 0.22000000000000003,
+            "net_benefit": 0.11549419241726933,
+            "treat_all": 0.11242603550295857,
+            "called_positive": 93
+          },
+          {
+            "threshold": 0.23000000000000004,
+            "net_benefit": 0.10922410922410919,
+            "treat_all": 0.1008991008991009,
+            "called_positive": 92
+          },
+          {
+            "threshold": 0.24000000000000005,
+            "net_benefit": 0.10301394511920828,
+            "treat_all": 0.08906882591093118,
+            "called_positive": 91
+          },
+          {
+            "threshold": 0.25000000000000006,
+            "net_benefit": 0.09686609686609682,
+            "treat_all": 0.07692307692307687,
+            "called_positive": 90
+          },
+          {
+            "threshold": 0.26000000000000006,
+            "net_benefit": 0.08824208824208818,
+            "treat_all": 0.06444906444906442,
+            "called_positive": 86
+          },
+          {
+            "threshold": 0.27,
+            "net_benefit": 0.08886547242711623,
+            "treat_all": 0.051633298208640654,
+            "called_positive": 83
+          },
+          {
+            "threshold": 0.28,
+            "net_benefit": 0.08357075023741686,
+            "treat_all": 0.038461538461538436,
+            "called_positive": 82
+          },
+          {
+            "threshold": 0.29000000000000004,
+            "net_benefit": 0.08534970506801487,
+            "treat_all": 0.02491874322860238,
+            "called_positive": 79
+          },
+          {
+            "threshold": 0.30000000000000004,
+            "net_benefit": 0.07570207570207566,
+            "treat_all": 0.01098901098901095,
+            "called_positive": 76
+          },
+          {
+            "threshold": 0.31000000000000005,
+            "net_benefit": 0.07506503158677066,
+            "treat_all": -0.003344481605351224,
+            "called_positive": 74
+          },
+          {
+            "threshold": 0.32000000000000006,
+            "net_benefit": 0.0749120160884866,
+            "treat_all": -0.01809954751131232,
+            "called_positive": 72
+          },
+          {
+            "threshold": 0.33,
+            "net_benefit": 0.06671769358336521,
+            "treat_all": -0.033295063145809434,
+            "called_positive": 69
+          },
+          {
+            "threshold": 0.34,
+            "net_benefit": 0.08080808080808077,
+            "treat_all": -0.048951048951049014,
+            "called_positive": 64
+          },
+          {
+            "threshold": 0.35000000000000003,
+            "net_benefit": 0.04404996712689019,
+            "treat_all": -0.06508875739644976,
+            "called_positive": 59
+          },
+          {
+            "threshold": 0.36000000000000004,
+            "net_benefit": 0.02190170940170938,
+            "treat_all": -0.08173076923076927,
+            "called_positive": 51
+          },
+          {
+            "threshold": 0.37000000000000005,
+            "net_benefit": -0.0037986704653371617,
+            "treat_all": -0.098901098901099,
+            "called_positive": 44
+          },
+          {
+            "threshold": 0.38000000000000006,
+            "net_benefit": 0.008271298593879192,
+            "treat_all": -0.11662531017369743,
+            "called_positive": 30
+          },
+          {
+            "threshold": 0.39000000000000007,
+            "net_benefit": 0.005884825556956685,
+            "treat_all": -0.13493064312736458,
+            "called_positive": 22
+          },
+          {
+            "threshold": 0.4000000000000001,
+            "net_benefit": 0.011396011396011374,
+            "treat_all": -0.15384615384615402,
+            "called_positive": 13
+          },
+          {
+            "threshold": 0.4100000000000001,
+            "net_benefit": 0.007822685788787476,
+            "treat_all": -0.1734028683181228,
+            "called_positive": 6
+          },
+          {
+            "threshold": 0.42000000000000004,
+            "net_benefit": 0.01945181255526083,
+            "treat_all": -0.19363395225464197,
+            "called_positive": 4
+          },
+          {
+            "threshold": 0.43000000000000005,
+            "net_benefit": 0.017094017094017096,
+            "treat_all": -0.21457489878542513,
+            "called_positive": 2
+          },
+          {
+            "threshold": 0.44000000000000006,
+            "net_benefit": 0.0,
+            "treat_all": -0.23626373626373642,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.45000000000000007,
+            "net_benefit": 0.0,
+            "treat_all": -0.25874125874125886,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.4600000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.28205128205128216,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.4700000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3062409288824385,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.4800000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3313609467455624,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.49000000000000005,
+            "net_benefit": 0.0,
+            "treat_all": -0.35746606334841624,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5000000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3846153846153849,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.4128728414442703,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.44230769230769273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.47299509001636697,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.5050167224080273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5500000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.538461538461539,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5600000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.573426573426574,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6100178890876572,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.648351648351649,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6885553470919331,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.7307692307692317,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.7751479289940832,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.821862348178138,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.8711018711018716,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9230769230769238,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6500000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9780219780219788,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6600000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -1.0361990950226252,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.0979020979020988,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.1634615384615397,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.2332506203473956,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.307692307692309,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7100000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.387267904509285,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7200000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.4725274725274742,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7300000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.5641025641025659,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7400000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.6627218934911263,
+            "called_positive": 0
+          }
+        ],
+        "sub": [
+          {
+            "threshold": 0.05,
+            "net_benefit": 0.2726045883940621,
+            "treat_all": 0.27125506072874495,
+            "called_positive": 114
+          },
+          {
+            "threshold": 0.060000000000000005,
+            "net_benefit": 0.25713766139298055,
+            "treat_all": 0.2635024549918167,
+            "called_positive": 112
+          },
+          {
+            "threshold": 0.07,
+            "net_benefit": 0.25025273412370186,
+            "treat_all": 0.2555831265508685,
+            "called_positive": 111
+          },
+          {
+            "threshold": 0.08000000000000002,
+            "net_benefit": 0.24266072092159047,
+            "treat_all": 0.24749163879598662,
+            "called_positive": 111
+          },
+          {
+            "threshold": 0.09000000000000001,
+            "net_benefit": 0.22720015027707335,
+            "treat_all": 0.23922231614539308,
+            "called_positive": 109
+          },
+          {
+            "threshold": 0.1,
+            "net_benefit": 0.22317188983855651,
+            "treat_all": 0.23076923076923078,
+            "called_positive": 105
+          },
+          {
+            "threshold": 0.11000000000000001,
+            "net_benefit": 0.21665226159608184,
+            "treat_all": 0.22212618841832327,
+            "called_positive": 104
+          },
+          {
+            "threshold": 0.12000000000000001,
+            "net_benefit": 0.20901320901320902,
+            "treat_all": 0.21328671328671328,
+            "called_positive": 104
+          },
+          {
+            "threshold": 0.13,
+            "net_benefit": 0.2037528244424796,
+            "treat_all": 0.20424403183023873,
+            "called_positive": 102
+          },
+          {
+            "threshold": 0.14,
+            "net_benefit": 0.19737626714370904,
+            "treat_all": 0.19499105545617174,
+            "called_positive": 101
+          },
+          {
+            "threshold": 0.15000000000000002,
+            "net_benefit": 0.1910507792860734,
+            "treat_all": 0.18552036199095023,
+            "called_positive": 100
+          },
+          {
+            "threshold": 0.16000000000000003,
+            "net_benefit": 0.17785917785917782,
+            "treat_all": 0.1758241758241758,
+            "called_positive": 97
+          },
+          {
+            "threshold": 0.17000000000000004,
+            "net_benefit": 0.1700133868808567,
+            "treat_all": 0.16589434661723818,
+            "called_positive": 97
+          },
+          {
+            "threshold": 0.18000000000000005,
+            "net_benefit": 0.16385240775484672,
+            "treat_all": 0.15572232645403372,
+            "called_positive": 96
+          },
+          {
+            "threshold": 0.19,
+            "net_benefit": 0.15775034293552814,
+            "treat_all": 0.14529914529914534,
+            "called_positive": 95
+          },
+          {
+            "threshold": 0.2,
+            "net_benefit": 0.1517094017094017,
+            "treat_all": 0.13461538461538464,
+            "called_positive": 94
+          },
+          {
+            "threshold": 0.21000000000000002,
+            "net_benefit": 0.1349129070648058,
+            "treat_all": 0.12366114897760466,
+            "called_positive": 93
+          },
+          {
+            "threshold": 0.22000000000000003,
+            "net_benefit": 0.13368397983782598,
+            "treat_all": 0.11242603550295857,
+            "called_positive": 90
+          },
+          {
+            "threshold": 0.23000000000000004,
+            "net_benefit": 0.1083361083361083,
+            "treat_all": 0.1008991008991009,
+            "called_positive": 88
+          },
+          {
+            "threshold": 0.24000000000000005,
+            "net_benefit": 0.09131803868645971,
+            "treat_all": 0.08906882591093118,
+            "called_positive": 87
+          },
+          {
+            "threshold": 0.25000000000000006,
+            "net_benefit": 0.08547008547008544,
+            "treat_all": 0.07692307692307687,
+            "called_positive": 86
+          },
+          {
+            "threshold": 0.26000000000000006,
+            "net_benefit": 0.08870408870408869,
+            "treat_all": 0.06444906444906442,
+            "called_positive": 82
+          },
+          {
+            "threshold": 0.27,
+            "net_benefit": 0.08664090855871676,
+            "treat_all": 0.051633298208640654,
+            "called_positive": 80
+          },
+          {
+            "threshold": 0.28,
+            "net_benefit": 0.08499525166191832,
+            "treat_all": 0.038461538461538436,
+            "called_positive": 78
+          },
+          {
+            "threshold": 0.29000000000000004,
+            "net_benefit": 0.0802937281810521,
+            "treat_all": 0.02491874322860238,
+            "called_positive": 77
+          },
+          {
+            "threshold": 0.30000000000000004,
+            "net_benefit": 0.06715506715506711,
+            "treat_all": 0.01098901098901095,
+            "called_positive": 75
+          },
+          {
+            "threshold": 0.31000000000000005,
+            "net_benefit": 0.0741979437631611,
+            "treat_all": -0.003344481605351224,
+            "called_positive": 71
+          },
+          {
+            "threshold": 0.32000000000000006,
+            "net_benefit": 0.07038712921065857,
+            "treat_all": -0.01809954751131232,
+            "called_positive": 70
+          },
+          {
+            "threshold": 0.33,
+            "net_benefit": 0.07513713483862736,
+            "treat_all": -0.033295063145809434,
+            "called_positive": 67
+          },
+          {
+            "threshold": 0.34,
+            "net_benefit": 0.07200207200207198,
+            "treat_all": -0.048951048951049014,
+            "called_positive": 66
+          },
+          {
+            "threshold": 0.35000000000000003,
+            "net_benefit": 0.06048652202498356,
+            "treat_all": -0.06508875739644976,
+            "called_positive": 64
+          },
+          {
+            "threshold": 0.36000000000000004,
+            "net_benefit": 0.042735042735042694,
+            "treat_all": -0.08173076923076927,
+            "called_positive": 55
+          },
+          {
+            "threshold": 0.37000000000000005,
+            "net_benefit": 0.028897028897028887,
+            "treat_all": -0.098901098901099,
+            "called_positive": 51
+          },
+          {
+            "threshold": 0.38000000000000006,
+            "net_benefit": 0.017645437000275682,
+            "treat_all": -0.11662531017369743,
+            "called_positive": 44
+          },
+          {
+            "threshold": 0.39000000000000007,
+            "net_benefit": 0.018915510718789344,
+            "treat_all": -0.13493064312736458,
+            "called_positive": 35
+          },
+          {
+            "threshold": 0.4000000000000001,
+            "net_benefit": 0.005698005698005659,
+            "treat_all": -0.15384615384615402,
+            "called_positive": 24
+          },
+          {
+            "threshold": 0.4100000000000001,
+            "net_benefit": -0.005504852962480107,
+            "treat_all": -0.1734028683181228,
+            "called_positive": 18
+          },
+          {
+            "threshold": 0.42000000000000004,
+            "net_benefit": 0.009431181844974944,
+            "treat_all": -0.19363395225464197,
+            "called_positive": 8
+          },
+          {
+            "threshold": 0.43000000000000005,
+            "net_benefit": 0.004198530514319987,
+            "treat_all": -0.21457489878542513,
+            "called_positive": 4
+          },
+          {
+            "threshold": 0.44000000000000006,
+            "net_benefit": 0.0018315018315018302,
+            "treat_all": -0.23626373626373642,
+            "called_positive": 2
+          },
+          {
+            "threshold": 0.45000000000000007,
+            "net_benefit": 0.0,
+            "treat_all": -0.25874125874125886,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.4600000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.28205128205128216,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.4700000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3062409288824385,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.4800000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3313609467455624,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.49000000000000005,
+            "net_benefit": 0.0,
+            "treat_all": -0.35746606334841624,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5000000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3846153846153849,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.4128728414442703,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.44230769230769273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.47299509001636697,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.5050167224080273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5500000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.538461538461539,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5600000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.573426573426574,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6100178890876572,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.648351648351649,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6885553470919331,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.7307692307692317,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.7751479289940832,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.821862348178138,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.8711018711018716,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9230769230769238,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6500000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9780219780219788,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6600000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -1.0361990950226252,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.0979020979020988,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.1634615384615397,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.2332506203473956,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.307692307692309,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7100000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.387267904509285,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7200000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.4725274725274742,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7300000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.5641025641025659,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7400000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.6627218934911263,
+            "called_positive": 0
+          }
+        ]
+      }
+    },
+    "T1": {
+      "auc_real": 0.7126200274348422,
+      "auc_sub": 0.7030178326474623,
+      "operating_points": {
+        "specificity_0.80": {
+          "real": {
+            "sensitivity": 0.3888888888888889,
+            "specificity": 0.8024691358024691,
+            "threshold": -1.0777810197220012
+          },
+          "sub": {
+            "sensitivity": 0.4722222222222222,
+            "specificity": 0.8024691358024691,
+            "threshold": -2.22102108716
+          },
+          "sensitivity_difference": 0.08333333333333331,
+          "bootstrap": {
+            "sensitivity_real_ci": [
+              0.19444444444444445,
+              0.6944444444444444
+            ],
+            "sensitivity_sub_ci": [
+              0.2777777777777778,
+              0.7222222222222222
+            ],
+            "difference_ci": [
+              -0.11111111111111116,
+              0.25000000000000006
+            ],
+            "replicates": 10000
+          },
+          "reclassification": {
+            "pCR": {
+              "n": 36,
+              "positive_to_negative": 1,
+              "negative_to_positive": 4,
+              "unchanged": 31
+            },
+            "non_pCR": {
+              "n": 81,
+              "positive_to_negative": 2,
+              "negative_to_positive": 2,
+              "unchanged": 77
+            },
+            "any_change": 9
+          }
+        },
+        "specificity_0.90": {
+          "real": {
+            "sensitivity": 0.3055555555555556,
+            "specificity": 0.9012345679012346,
+            "threshold": -0.5764116452600007
+          },
+          "sub": {
+            "sensitivity": 0.3055555555555556,
+            "specificity": 0.9012345679012346,
+            "threshold": -1.3725122572039925
+          },
+          "sensitivity_difference": 0.0,
+          "bootstrap": {
+            "sensitivity_real_ci": [
+              0.1111111111111111,
+              0.4722222222222222
+            ],
+            "sensitivity_sub_ci": [
+              0.1111111111111111,
+              0.5277777777777778
+            ],
+            "difference_ci": [
+              -0.16666666666666666,
+              0.19444444444444448
+            ],
+            "replicates": 10000
+          },
+          "reclassification": {
+            "pCR": {
+              "n": 36,
+              "positive_to_negative": 2,
+              "negative_to_positive": 2,
+              "unchanged": 32
+            },
+            "non_pCR": {
+              "n": 81,
+              "positive_to_negative": 3,
+              "negative_to_positive": 3,
+              "unchanged": 75
+            },
+            "any_change": 10
+          }
+        }
+      },
+      "calibration": {
+        "real": {
+          "slope": 0.806120330518092,
+          "intercept": -0.12039277402073256,
+          "mean_predicted": 0.307932646870371,
+          "observed_rate": 0.3076923076923077,
+          "note": "slope 1 and intercept 0 is perfect; a slope below 1 means the predictions are too extreme"
+        },
+        "sub": {
+          "slope": 0.8187255994416188,
+          "intercept": -0.1210175567658261,
+          "mean_predicted": 0.30746595373657,
+          "observed_rate": 0.3076923076923077,
+          "note": "slope 1 and intercept 0 is perfect; a slope below 1 means the predictions are too extreme"
+        }
+      },
+      "decision_curve": {
+        "real": [
+          {
+            "threshold": 0.05,
+            "net_benefit": 0.2681061628430049,
+            "treat_all": 0.27125506072874495,
+            "called_positive": 104
+          },
+          {
+            "threshold": 0.060000000000000005,
+            "net_benefit": 0.26150209128932533,
+            "treat_all": 0.2635024549918167,
+            "called_positive": 104
+          },
+          {
+            "threshold": 0.07,
+            "net_benefit": 0.25539931991544895,
+            "treat_all": 0.2555831265508685,
+            "called_positive": 103
+          },
+          {
+            "threshold": 0.08000000000000002,
+            "net_benefit": 0.2400594574507618,
+            "treat_all": 0.24749163879598662,
+            "called_positive": 102
+          },
+          {
+            "threshold": 0.09000000000000001,
+            "net_benefit": 0.23565323565323568,
+            "treat_all": 0.23922231614539308,
+            "called_positive": 99
+          },
+          {
+            "threshold": 0.1,
+            "net_benefit": 0.2298195631528965,
+            "treat_all": 0.23076923076923078,
+            "called_positive": 98
+          },
+          {
+            "threshold": 0.11000000000000001,
+            "net_benefit": 0.22404686449630273,
+            "treat_all": 0.22212618841832327,
+            "called_positive": 97
+          },
+          {
+            "threshold": 0.12000000000000001,
+            "net_benefit": 0.21717171717171718,
+            "treat_all": 0.21328671328671328,
+            "called_positive": 97
+          },
+          {
+            "threshold": 0.13,
+            "net_benefit": 0.21141565969152176,
+            "treat_all": 0.20424403183023873,
+            "called_positive": 96
+          },
+          {
+            "threshold": 0.14,
+            "net_benefit": 0.2071158815344862,
+            "treat_all": 0.19499105545617174,
+            "called_positive": 94
+          },
+          {
+            "threshold": 0.15000000000000002,
+            "net_benefit": 0.2016088486676722,
+            "treat_all": 0.18552036199095023,
+            "called_positive": 93
+          },
+          {
+            "threshold": 0.16000000000000003,
+            "net_benefit": 0.19454619454619454,
+            "treat_all": 0.1758241758241758,
+            "called_positive": 93
+          },
+          {
+            "threshold": 0.17000000000000004,
+            "net_benefit": 0.1890639481000927,
+            "treat_all": 0.16589434661723818,
+            "called_positive": 92
+          },
+          {
+            "threshold": 0.18000000000000005,
+            "net_benefit": 0.18178027934125493,
+            "treat_all": 0.15572232645403372,
+            "called_positive": 92
+          },
+          {
+            "threshold": 0.19,
+            "net_benefit": 0.17431676690935954,
+            "treat_all": 0.14529914529914534,
+            "called_positive": 92
+          },
+          {
+            "threshold": 0.2,
+            "net_benefit": 0.16880341880341881,
+            "treat_all": 0.13461538461538464,
+            "called_positive": 91
+          },
+          {
+            "threshold": 0.21000000000000002,
+            "net_benefit": 0.16336687222763172,
+            "treat_all": 0.12366114897760466,
+            "called_positive": 90
+          },
+          {
+            "threshold": 0.22000000000000003,
+            "net_benefit": 0.16283147052377822,
+            "treat_all": 0.11242603550295857,
+            "called_positive": 87
+          },
+          {
+            "threshold": 0.23000000000000004,
+            "net_benefit": 0.1552891552891553,
+            "treat_all": 0.1008991008991009,
+            "called_positive": 87
+          },
+          {
+            "threshold": 0.24000000000000005,
+            "net_benefit": 0.1390013495276653,
+            "treat_all": 0.08906882591093118,
+            "called_positive": 86
+          },
+          {
+            "threshold": 0.25000000000000006,
+            "net_benefit": 0.12535612535612536,
+            "treat_all": 0.07692307692307687,
+            "called_positive": 84
+          },
+          {
+            "threshold": 0.26000000000000006,
+            "net_benefit": 0.12635712635712634,
+            "treat_all": 0.06444906444906442,
+            "called_positive": 81
+          },
+          {
+            "threshold": 0.27,
+            "net_benefit": 0.12492682355696055,
+            "treat_all": 0.051633298208640654,
+            "called_positive": 79
+          },
+          {
+            "threshold": 0.28,
+            "net_benefit": 0.12060778727445395,
+            "treat_all": 0.038461538461538436,
+            "called_positive": 78
+          },
+          {
+            "threshold": 0.29000000000000004,
+            "net_benefit": 0.10786084025520642,
+            "treat_all": 0.02491874322860238,
+            "called_positive": 76
+          },
+          {
+            "threshold": 0.30000000000000004,
+            "net_benefit": 0.10378510378510375,
+            "treat_all": 0.01098901098901095,
+            "called_positive": 75
+          },
+          {
+            "threshold": 0.31000000000000005,
+            "net_benefit": 0.08658491267186916,
+            "treat_all": -0.003344481605351224,
+            "called_positive": 71
+          },
+          {
+            "threshold": 0.32000000000000006,
+            "net_benefit": 0.07440925087983907,
+            "treat_all": -0.01809954751131232,
+            "called_positive": 69
+          },
+          {
+            "threshold": 0.33,
+            "net_benefit": 0.07513713483862736,
+            "treat_all": -0.033295063145809434,
+            "called_positive": 67
+          },
+          {
+            "threshold": 0.34,
+            "net_benefit": 0.05050505050505047,
+            "treat_all": -0.048951048951049014,
+            "called_positive": 65
+          },
+          {
+            "threshold": 0.35000000000000003,
+            "net_benefit": 0.04799474030243256,
+            "treat_all": -0.06508875739644976,
+            "called_positive": 61
+          },
+          {
+            "threshold": 0.36000000000000004,
+            "net_benefit": 0.0646367521367521,
+            "treat_all": -0.08173076923076927,
+            "called_positive": 56
+          },
+          {
+            "threshold": 0.37000000000000005,
+            "net_benefit": 0.0645773979107312,
+            "treat_all": -0.098901098901099,
+            "called_positive": 52
+          },
+          {
+            "threshold": 0.38000000000000006,
+            "net_benefit": 0.057071960297766705,
+            "treat_all": -0.11662531017369743,
+            "called_positive": 47
+          },
+          {
+            "threshold": 0.39000000000000007,
+            "net_benefit": 0.05688664705058141,
+            "treat_all": -0.13493064312736458,
+            "called_positive": 46
+          },
+          {
+            "threshold": 0.4000000000000001,
+            "net_benefit": 0.05128205128205124,
+            "treat_all": -0.15384615384615402,
+            "called_positive": 41
+          },
+          {
+            "threshold": 0.4100000000000001,
+            "net_benefit": 0.0350572214978994,
+            "treat_all": -0.1734028683181228,
+            "called_positive": 38
+          },
+          {
+            "threshold": 0.42000000000000004,
+            "net_benefit": 0.014441497200117864,
+            "treat_all": -0.19363395225464197,
+            "called_positive": 31
+          },
+          {
+            "threshold": 0.43000000000000005,
+            "net_benefit": 0.007947218473534232,
+            "treat_all": -0.21457489878542513,
+            "called_positive": 29
+          },
+          {
+            "threshold": 0.44000000000000006,
+            "net_benefit": 0.02014652014652013,
+            "treat_all": -0.23626373626373642,
+            "called_positive": 22
+          },
+          {
+            "threshold": 0.45000000000000007,
+            "net_benefit": 0.015540015540015523,
+            "treat_all": -0.25874125874125886,
+            "called_positive": 20
+          },
+          {
+            "threshold": 0.4600000000000001,
+            "net_benefit": 0.0015827793605571183,
+            "treat_all": -0.28205128205128216,
+            "called_positive": 15
+          },
+          {
+            "threshold": 0.4700000000000001,
+            "net_benefit": -0.010320915981293359,
+            "treat_all": -0.3062409288824385,
+            "called_positive": 12
+          },
+          {
+            "threshold": 0.4800000000000001,
+            "net_benefit": 0.017751479289940822,
+            "treat_all": -0.3313609467455624,
+            "called_positive": 4
+          },
+          {
+            "threshold": 0.49000000000000005,
+            "net_benefit": -0.008211831741243507,
+            "treat_all": -0.35746606334841624,
+            "called_positive": 1
+          },
+          {
+            "threshold": 0.5000000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3846153846153849,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.4128728414442703,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.44230769230769273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.47299509001636697,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.5050167224080273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5500000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.538461538461539,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5600000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.573426573426574,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6100178890876572,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.648351648351649,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6885553470919331,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.7307692307692317,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.7751479289940832,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.821862348178138,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.8711018711018716,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9230769230769238,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6500000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9780219780219788,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6600000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -1.0361990950226252,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.0979020979020988,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.1634615384615397,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.2332506203473956,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.307692307692309,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7100000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.387267904509285,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7200000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.4725274725274742,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7300000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.5641025641025659,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7400000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.6627218934911263,
+            "called_positive": 0
+          }
+        ],
+        "sub": [
+          {
+            "threshold": 0.05,
+            "net_benefit": 0.2748538011695907,
+            "treat_all": 0.27125506072874495,
+            "called_positive": 109
+          },
+          {
+            "threshold": 0.060000000000000005,
+            "net_benefit": 0.2678668848881615,
+            "treat_all": 0.2635024549918167,
+            "called_positive": 109
+          },
+          {
+            "threshold": 0.07,
+            "net_benefit": 0.26072971234261555,
+            "treat_all": 0.2555831265508685,
+            "called_positive": 109
+          },
+          {
+            "threshold": 0.08000000000000002,
+            "net_benefit": 0.25418060200668896,
+            "treat_all": 0.24749163879598662,
+            "called_positive": 108
+          },
+          {
+            "threshold": 0.09000000000000001,
+            "net_benefit": 0.24852071005917162,
+            "treat_all": 0.23922231614539308,
+            "called_positive": 106
+          },
+          {
+            "threshold": 0.1,
+            "net_benefit": 0.24311490978157646,
+            "treat_all": 0.23076923076923078,
+            "called_positive": 104
+          },
+          {
+            "threshold": 0.11000000000000001,
+            "net_benefit": 0.22731201382886773,
+            "treat_all": 0.22212618841832327,
+            "called_positive": 103
+          },
+          {
+            "threshold": 0.12000000000000001,
+            "net_benefit": 0.2125097125097125,
+            "treat_all": 0.21328671328671328,
+            "called_positive": 101
+          },
+          {
+            "threshold": 0.13,
+            "net_benefit": 0.20630710285882703,
+            "treat_all": 0.20424403183023873,
+            "called_positive": 100
+          },
+          {
+            "threshold": 0.14,
+            "net_benefit": 0.1916120055654939,
+            "treat_all": 0.19499105545617174,
+            "called_positive": 98
+          },
+          {
+            "threshold": 0.15000000000000002,
+            "net_benefit": 0.17697335344394166,
+            "treat_all": 0.18552036199095023,
+            "called_positive": 96
+          },
+          {
+            "threshold": 0.16000000000000003,
+            "net_benefit": 0.16239316239316237,
+            "treat_all": 0.1758241758241758,
+            "called_positive": 94
+          },
+          {
+            "threshold": 0.17000000000000004,
+            "net_benefit": 0.15466996189887755,
+            "treat_all": 0.16589434661723818,
+            "called_positive": 94
+          },
+          {
+            "threshold": 0.18000000000000005,
+            "net_benefit": 0.14675839066082963,
+            "treat_all": 0.15572232645403372,
+            "called_positive": 94
+          },
+          {
+            "threshold": 0.19,
+            "net_benefit": 0.13865147198480535,
+            "treat_all": 0.14529914529914534,
+            "called_positive": 94
+          },
+          {
+            "threshold": 0.2,
+            "net_benefit": 0.1346153846153846,
+            "treat_all": 0.13461538461538464,
+            "called_positive": 92
+          },
+          {
+            "threshold": 0.21000000000000002,
+            "net_benefit": 0.13090987774532079,
+            "treat_all": 0.12366114897760466,
+            "called_positive": 90
+          },
+          {
+            "threshold": 0.22000000000000003,
+            "net_benefit": 0.1251369712908174,
+            "treat_all": 0.11242603550295857,
+            "called_positive": 89
+          },
+          {
+            "threshold": 0.23000000000000004,
+            "net_benefit": 0.12198912198912196,
+            "treat_all": 0.1008991008991009,
+            "called_positive": 87
+          },
+          {
+            "threshold": 0.24000000000000005,
+            "net_benefit": 0.11381016644174538,
+            "treat_all": 0.08906882591093118,
+            "called_positive": 87
+          },
+          {
+            "threshold": 0.25000000000000006,
+            "net_benefit": 0.10256410256410248,
+            "treat_all": 0.07692307692307687,
+            "called_positive": 84
+          },
+          {
+            "threshold": 0.26000000000000006,
+            "net_benefit": 0.09424809424809419,
+            "treat_all": 0.06444906444906442,
+            "called_positive": 84
+          },
+          {
+            "threshold": 0.27,
+            "net_benefit": 0.09202669476642075,
+            "treat_all": 0.051633298208640654,
+            "called_positive": 82
+          },
+          {
+            "threshold": 0.28,
+            "net_benefit": 0.09021842355175685,
+            "treat_all": 0.038461538461538436,
+            "called_positive": 80
+          },
+          {
+            "threshold": 0.29000000000000004,
+            "net_benefit": 0.08884073672806062,
+            "treat_all": 0.02491874322860238,
+            "called_positive": 78
+          },
+          {
+            "threshold": 0.30000000000000004,
+            "net_benefit": 0.08791208791208785,
+            "treat_all": 0.01098901098901095,
+            "called_positive": 76
+          },
+          {
+            "threshold": 0.31000000000000005,
+            "net_benefit": 0.07506503158677066,
+            "treat_all": -0.003344481605351224,
+            "called_positive": 74
+          },
+          {
+            "threshold": 0.32000000000000006,
+            "net_benefit": 0.06636500754147806,
+            "treat_all": -0.01809954751131232,
+            "called_positive": 71
+          },
+          {
+            "threshold": 0.33,
+            "net_benefit": 0.05804311774461024,
+            "treat_all": -0.033295063145809434,
+            "called_positive": 65
+          },
+          {
+            "threshold": 0.34,
+            "net_benefit": 0.05931105931105926,
+            "treat_all": -0.048951048951049014,
+            "called_positive": 63
+          },
+          {
+            "threshold": 0.35000000000000003,
+            "net_benefit": 0.07955292570677183,
+            "treat_all": -0.06508875739644976,
+            "called_positive": 57
+          },
+          {
+            "threshold": 0.36000000000000004,
+            "net_benefit": 0.06570512820512817,
+            "treat_all": -0.08173076923076927,
+            "called_positive": 53
+          },
+          {
+            "threshold": 0.37000000000000005,
+            "net_benefit": 0.061050061050061,
+            "treat_all": -0.098901098901099,
+            "called_positive": 50
+          },
+          {
+            "threshold": 0.38000000000000006,
+            "net_benefit": 0.057071960297766705,
+            "treat_all": -0.11662531017369743,
+            "called_positive": 47
+          },
+          {
+            "threshold": 0.39000000000000007,
+            "net_benefit": 0.04217458315818967,
+            "treat_all": -0.13493064312736458,
+            "called_positive": 41
+          },
+          {
+            "threshold": 0.4000000000000001,
+            "net_benefit": 0.05128205128205124,
+            "treat_all": -0.15384615384615402,
+            "called_positive": 36
+          },
+          {
+            "threshold": 0.4100000000000001,
+            "net_benefit": 0.027234535709111912,
+            "treat_all": -0.1734028683181228,
+            "called_positive": 32
+          },
+          {
+            "threshold": 0.42000000000000004,
+            "net_benefit": 0.03448275862068964,
+            "treat_all": -0.19363395225464197,
+            "called_positive": 23
+          },
+          {
+            "threshold": 0.43000000000000005,
+            "net_benefit": 0.02534113060428849,
+            "treat_all": -0.21457489878542513,
+            "called_positive": 17
+          },
+          {
+            "threshold": 0.44000000000000006,
+            "net_benefit": 0.04151404151404151,
+            "treat_all": -0.23626373626373642,
+            "called_positive": 12
+          },
+          {
+            "threshold": 0.45000000000000007,
+            "net_benefit": 0.011655011655011647,
+            "treat_all": -0.25874125874125886,
+            "called_positive": 5
+          },
+          {
+            "threshold": 0.4600000000000001,
+            "net_benefit": -0.007280785058562839,
+            "treat_all": -0.28205128205128216,
+            "called_positive": 1
+          },
+          {
+            "threshold": 0.4700000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3062409288824385,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.4800000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3313609467455624,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.49000000000000005,
+            "net_benefit": 0.0,
+            "treat_all": -0.35746606334841624,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5000000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3846153846153849,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.4128728414442703,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.44230769230769273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.47299509001636697,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.5050167224080273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5500000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.538461538461539,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5600000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.573426573426574,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6100178890876572,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.648351648351649,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6885553470919331,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.7307692307692317,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.7751479289940832,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.821862348178138,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.8711018711018716,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9230769230769238,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6500000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9780219780219788,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6600000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -1.0361990950226252,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.0979020979020988,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.1634615384615397,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.2332506203473956,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.307692307692309,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7100000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.387267904509285,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7200000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.4725274725274742,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7300000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.5641025641025659,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7400000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.6627218934911263,
+            "called_positive": 0
+          }
+        ]
+      }
+    },
+    "relative": {
+      "auc_real": 0.6460905349794238,
+      "auc_sub": 0.6529492455418381,
+      "operating_points": {
+        "specificity_0.80": {
+          "real": {
+            "sensitivity": 0.3888888888888889,
+            "specificity": 0.8024691358024691,
+            "threshold": 0.8148808197816886
+          },
+          "sub": {
+            "sensitivity": 0.3611111111111111,
+            "specificity": 0.8024691358024691,
+            "threshold": 0.6815045795803953
+          },
+          "sensitivity_difference": -0.02777777777777779,
+          "bootstrap": {
+            "sensitivity_real_ci": [
+              0.16666666666666666,
+              0.5555555555555556
+            ],
+            "sensitivity_sub_ci": [
+              0.16666666666666666,
+              0.5277777777777778
+            ],
+            "difference_ci": [
+              -0.16666666666666666,
+              0.1388888888888889
+            ],
+            "replicates": 10000
+          },
+          "reclassification": {
+            "pCR": {
+              "n": 36,
+              "positive_to_negative": 3,
+              "negative_to_positive": 2,
+              "unchanged": 31
+            },
+            "non_pCR": {
+              "n": 81,
+              "positive_to_negative": 3,
+              "negative_to_positive": 3,
+              "unchanged": 75
+            },
+            "any_change": 11
+          }
+        },
+        "specificity_0.90": {
+          "real": {
+            "sensitivity": 0.2777777777777778,
+            "specificity": 0.9012345679012346,
+            "threshold": 0.8917525773195877
+          },
+          "sub": {
+            "sensitivity": 0.2777777777777778,
+            "specificity": 0.9012345679012346,
+            "threshold": 0.8013040167523313
+          },
+          "sensitivity_difference": 0.0,
+          "bootstrap": {
+            "sensitivity_real_ci": [
+              0.1388888888888889,
+              0.4166666666666667
+            ],
+            "sensitivity_sub_ci": [
+              0.08333333333333333,
+              0.4166666666666667
+            ],
+            "difference_ci": [
+              -0.16666666666666669,
+              0.1111111111111111
+            ],
+            "replicates": 10000
+          },
+          "reclassification": {
+            "pCR": {
+              "n": 36,
+              "positive_to_negative": 1,
+              "negative_to_positive": 1,
+              "unchanged": 34
+            },
+            "non_pCR": {
+              "n": 81,
+              "positive_to_negative": 3,
+              "negative_to_positive": 3,
+              "unchanged": 75
+            },
+            "any_change": 8
+          }
+        }
+      },
+      "calibration": {
+        "real": {
+          "slope": 0.7307279480368483,
+          "intercept": -0.19975903949768783,
+          "mean_predicted": 0.30713005069861615,
+          "observed_rate": 0.3076923076923077,
+          "note": "slope 1 and intercept 0 is perfect; a slope below 1 means the predictions are too extreme"
+        },
+        "sub": {
+          "slope": 0.7030519272837537,
+          "intercept": -0.2278547724903296,
+          "mean_predicted": 0.30827778101668235,
+          "observed_rate": 0.3076923076923077,
+          "note": "slope 1 and intercept 0 is perfect; a slope below 1 means the predictions are too extreme"
+        }
+      },
+      "decision_curve": {
+        "real": [
+          {
+            "threshold": 0.05,
+            "net_benefit": 0.2640575798470535,
+            "treat_all": 0.27125506072874495,
+            "called_positive": 113
+          },
+          {
+            "threshold": 0.060000000000000005,
+            "net_benefit": 0.25659210765593743,
+            "treat_all": 0.2635024549918167,
+            "called_positive": 113
+          },
+          {
+            "threshold": 0.07,
+            "net_benefit": 0.24960941089973346,
+            "treat_all": 0.2555831265508685,
+            "called_positive": 112
+          },
+          {
+            "threshold": 0.08000000000000002,
+            "net_benefit": 0.24266072092159047,
+            "treat_all": 0.24749163879598662,
+            "called_positive": 111
+          },
+          {
+            "threshold": 0.09000000000000001,
+            "net_benefit": 0.23574715882408187,
+            "treat_all": 0.23922231614539308,
+            "called_positive": 110
+          },
+          {
+            "threshold": 0.1,
+            "net_benefit": 0.2279202279202279,
+            "treat_all": 0.23076923076923078,
+            "called_positive": 110
+          },
+          {
+            "threshold": 0.11000000000000001,
+            "net_benefit": 0.21991741092864686,
+            "treat_all": 0.22212618841832327,
+            "called_positive": 110
+          },
+          {
+            "threshold": 0.12000000000000001,
+            "net_benefit": 0.2117327117327117,
+            "treat_all": 0.21328671328671328,
+            "called_positive": 110
+          },
+          {
+            "threshold": 0.13,
+            "net_benefit": 0.20463699774044602,
+            "treat_all": 0.20424403183023873,
+            "called_positive": 109
+          },
+          {
+            "threshold": 0.14,
+            "net_benefit": 0.19618366129994036,
+            "treat_all": 0.19499105545617174,
+            "called_positive": 109
+          },
+          {
+            "threshold": 0.15000000000000002,
+            "net_benefit": 0.18903971845148312,
+            "treat_all": 0.18552036199095023,
+            "called_positive": 108
+          },
+          {
+            "threshold": 0.16000000000000003,
+            "net_benefit": 0.18355718355718353,
+            "treat_all": 0.1758241758241758,
+            "called_positive": 106
+          },
+          {
+            "threshold": 0.17000000000000004,
+            "net_benefit": 0.17835444341468434,
+            "treat_all": 0.16589434661723818,
+            "called_positive": 104
+          },
+          {
+            "threshold": 0.18000000000000005,
+            "net_benefit": 0.1648947258703356,
+            "treat_all": 0.15572232645403372,
+            "called_positive": 101
+          },
+          {
+            "threshold": 0.19,
+            "net_benefit": 0.15627308219900815,
+            "treat_all": 0.14529914529914534,
+            "called_positive": 101
+          },
+          {
+            "threshold": 0.2,
+            "net_benefit": 0.14743589743589747,
+            "treat_all": 0.13461538461538464,
+            "called_positive": 101
+          },
+          {
+            "threshold": 0.21000000000000002,
+            "net_benefit": 0.1389159363842908,
+            "treat_all": 0.12366114897760466,
+            "called_positive": 96
+          },
+          {
+            "threshold": 0.22000000000000003,
+            "net_benefit": 0.13258820951128641,
+            "treat_all": 0.11242603550295857,
+            "called_positive": 95
+          },
+          {
+            "threshold": 0.23000000000000004,
+            "net_benefit": 0.12376512376512375,
+            "treat_all": 0.1008991008991009,
+            "called_positive": 95
+          },
+          {
+            "threshold": 0.24000000000000005,
+            "net_benefit": 0.11156095366621685,
+            "treat_all": 0.08906882591093118,
+            "called_positive": 92
+          },
+          {
+            "threshold": 0.25000000000000006,
+            "net_benefit": 0.09686609686609682,
+            "treat_all": 0.07692307692307687,
+            "called_positive": 90
+          },
+          {
+            "threshold": 0.26000000000000006,
+            "net_benefit": 0.09678909678909675,
+            "treat_all": 0.06444906444906442,
+            "called_positive": 87
+          },
+          {
+            "threshold": 0.27,
+            "net_benefit": 0.07177145533309917,
+            "treat_all": 0.051633298208640654,
+            "called_positive": 81
+          },
+          {
+            "threshold": 0.28,
+            "net_benefit": 0.07977207977207976,
+            "treat_all": 0.038461538461538436,
+            "called_positive": 76
+          },
+          {
+            "threshold": 0.29000000000000004,
+            "net_benefit": 0.0701817744071265,
+            "treat_all": 0.02491874322860238,
+            "called_positive": 73
+          },
+          {
+            "threshold": 0.30000000000000004,
+            "net_benefit": 0.09157509157509156,
+            "treat_all": 0.01098901098901095,
+            "called_positive": 65
+          },
+          {
+            "threshold": 0.31000000000000005,
+            "net_benefit": 0.06304967174532389,
+            "treat_all": -0.003344481605351224,
+            "called_positive": 61
+          },
+          {
+            "threshold": 0.32000000000000006,
+            "net_benefit": 0.04725992961287073,
+            "treat_all": -0.01809954751131232,
+            "called_positive": 57
+          },
+          {
+            "threshold": 0.33,
+            "net_benefit": 0.02780966960071435,
+            "treat_all": -0.033295063145809434,
+            "called_positive": 54
+          },
+          {
+            "threshold": 0.34,
+            "net_benefit": 0.008806008806008792,
+            "treat_all": -0.048951048951049014,
+            "called_positive": 48
+          },
+          {
+            "threshold": 0.35000000000000003,
+            "net_benefit": 0.011834319526627196,
+            "treat_all": -0.06508875739644976,
+            "called_positive": 46
+          },
+          {
+            "threshold": 0.36000000000000004,
+            "net_benefit": -0.0016025641025641524,
+            "treat_all": -0.08173076923076927,
+            "called_positive": 42
+          },
+          {
+            "threshold": 0.37000000000000005,
+            "net_benefit": -0.005833672500339185,
+            "treat_all": -0.098901098901099,
+            "called_positive": 39
+          },
+          {
+            "threshold": 0.38000000000000006,
+            "net_benefit": 0.022056796250344596,
+            "treat_all": -0.11662531017369743,
+            "called_positive": 30
+          },
+          {
+            "threshold": 0.39000000000000007,
+            "net_benefit": 0.02059688944934844,
+            "treat_all": -0.13493064312736458,
+            "called_positive": 27
+          },
+          {
+            "threshold": 0.4000000000000001,
+            "net_benefit": 0.014245014245014204,
+            "treat_all": -0.15384615384615402,
+            "called_positive": 25
+          },
+          {
+            "threshold": 0.4100000000000001,
+            "net_benefit": 0.0175286107489497,
+            "treat_all": -0.1734028683181228,
+            "called_positive": 19
+          },
+          {
+            "threshold": 0.42000000000000004,
+            "net_benefit": 0.007957559681697604,
+            "treat_all": -0.19363395225464197,
+            "called_positive": 13
+          },
+          {
+            "threshold": 0.43000000000000005,
+            "net_benefit": -0.004498425551057131,
+            "treat_all": -0.21457489878542513,
+            "called_positive": 10
+          },
+          {
+            "threshold": 0.44000000000000006,
+            "net_benefit": -0.023199023199023207,
+            "treat_all": -0.23626373626373642,
+            "called_positive": 8
+          },
+          {
+            "threshold": 0.45000000000000007,
+            "net_benefit": -0.003885003885003891,
+            "treat_all": -0.25874125874125886,
+            "called_positive": 5
+          },
+          {
+            "threshold": 0.4600000000000001,
+            "net_benefit": 0.009813232035454256,
+            "treat_all": -0.28205128205128216,
+            "called_positive": 3
+          },
+          {
+            "threshold": 0.4700000000000001,
+            "net_benefit": 0.009514594420254797,
+            "treat_all": -0.3062409288824385,
+            "called_positive": 3
+          },
+          {
+            "threshold": 0.4800000000000001,
+            "net_benefit": 0.008547008547008548,
+            "treat_all": -0.3313609467455624,
+            "called_positive": 1
+          },
+          {
+            "threshold": 0.49000000000000005,
+            "net_benefit": 0.0,
+            "treat_all": -0.35746606334841624,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5000000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.3846153846153849,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.4128728414442703,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.44230769230769273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.47299509001636697,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.5050167224080273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5500000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.538461538461539,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5600000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.573426573426574,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6100178890876572,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.648351648351649,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6885553470919331,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.7307692307692317,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.7751479289940832,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.821862348178138,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.8711018711018716,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9230769230769238,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6500000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9780219780219788,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6600000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -1.0361990950226252,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.0979020979020988,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.1634615384615397,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.2332506203473956,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.307692307692309,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7100000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.387267904509285,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7200000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.4725274725274742,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7300000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.5641025641025659,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7400000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.6627218934911263,
+            "called_positive": 0
+          }
+        ],
+        "sub": [
+          {
+            "threshold": 0.05,
+            "net_benefit": 0.2636077372919478,
+            "treat_all": 0.27125506072874495,
+            "called_positive": 114
+          },
+          {
+            "threshold": 0.060000000000000005,
+            "net_benefit": 0.2560465539188943,
+            "treat_all": 0.2635024549918167,
+            "called_positive": 114
+          },
+          {
+            "threshold": 0.07,
+            "net_benefit": 0.24896608767576509,
+            "treat_all": 0.2555831265508685,
+            "called_positive": 113
+          },
+          {
+            "threshold": 0.08000000000000002,
+            "net_benefit": 0.2411742846525455,
+            "treat_all": 0.24749163879598662,
+            "called_positive": 113
+          },
+          {
+            "threshold": 0.09000000000000001,
+            "net_benefit": 0.23405654174884943,
+            "treat_all": 0.23922231614539308,
+            "called_positive": 112
+          },
+          {
+            "threshold": 0.1,
+            "net_benefit": 0.22602089268755934,
+            "treat_all": 0.23076923076923078,
+            "called_positive": 112
+          },
+          {
+            "threshold": 0.11000000000000001,
+            "net_benefit": 0.21780466724286948,
+            "treat_all": 0.22212618841832327,
+            "called_positive": 112
+          },
+          {
+            "threshold": 0.12000000000000001,
+            "net_benefit": 0.20940170940170938,
+            "treat_all": 0.21328671328671328,
+            "called_positive": 112
+          },
+          {
+            "threshold": 0.13,
+            "net_benefit": 0.2020827193240986,
+            "treat_all": 0.20424403183023873,
+            "called_positive": 111
+          },
+          {
+            "threshold": 0.14,
+            "net_benefit": 0.19479228781554359,
+            "treat_all": 0.19499105545617174,
+            "called_positive": 110
+          },
+          {
+            "threshold": 0.15000000000000002,
+            "net_benefit": 0.18903971845148312,
+            "treat_all": 0.18552036199095023,
+            "called_positive": 108
+          },
+          {
+            "threshold": 0.16000000000000003,
+            "net_benefit": 0.1819291819291819,
+            "treat_all": 0.1758241758241758,
+            "called_positive": 107
+          },
+          {
+            "threshold": 0.17000000000000004,
+            "net_benefit": 0.17660385130264644,
+            "treat_all": 0.16589434661723818,
+            "called_positive": 105
+          },
+          {
+            "threshold": 0.18000000000000005,
+            "net_benefit": 0.15926620804669583,
+            "treat_all": 0.15572232645403372,
+            "called_positive": 104
+          },
+          {
+            "threshold": 0.19,
+            "net_benefit": 0.15226337448559674,
+            "treat_all": 0.14529914529914534,
+            "called_positive": 103
+          },
+          {
+            "threshold": 0.2,
+            "net_benefit": 0.1452991452991453,
+            "treat_all": 0.13461538461538464,
+            "called_positive": 102
+          },
+          {
+            "threshold": 0.21000000000000002,
+            "net_benefit": 0.13610299686249053,
+            "treat_all": 0.12366114897760466,
+            "called_positive": 102
+          },
+          {
+            "threshold": 0.22000000000000003,
+            "net_benefit": 0.13631382862152092,
+            "treat_all": 0.11242603550295857,
+            "called_positive": 98
+          },
+          {
+            "threshold": 0.23000000000000004,
+            "net_benefit": 0.12121212121212119,
+            "treat_all": 0.1008991008991009,
+            "called_positive": 96
+          },
+          {
+            "threshold": 0.24000000000000005,
+            "net_benefit": 0.11470985155195679,
+            "treat_all": 0.08906882591093118,
+            "called_positive": 95
+          },
+          {
+            "threshold": 0.25000000000000006,
+            "net_benefit": 0.09971509971509968,
+            "treat_all": 0.07692307692307687,
+            "called_positive": 93
+          },
+          {
+            "threshold": 0.26000000000000006,
+            "net_benefit": 0.08570108570108567,
+            "treat_all": 0.06444906444906442,
+            "called_positive": 83
+          },
+          {
+            "threshold": 0.27,
+            "net_benefit": 0.08664090855871676,
+            "treat_all": 0.051633298208640654,
+            "called_positive": 80
+          },
+          {
+            "threshold": 0.28,
+            "net_benefit": 0.09829059829059827,
+            "treat_all": 0.038461538461538436,
+            "called_positive": 74
+          },
+          {
+            "threshold": 0.29000000000000004,
+            "net_benefit": 0.10123991814132657,
+            "treat_all": 0.02491874322860238,
+            "called_positive": 71
+          },
+          {
+            "threshold": 0.30000000000000004,
+            "net_benefit": 0.08424908424908423,
+            "treat_all": 0.01098901098901095,
+            "called_positive": 67
+          },
+          {
+            "threshold": 0.31000000000000005,
+            "net_benefit": 0.07630372847764147,
+            "treat_all": -0.003344481605351224,
+            "called_positive": 64
+          },
+          {
+            "threshold": 0.32000000000000006,
+            "net_benefit": 0.06385118149824026,
+            "treat_all": -0.01809954751131232,
+            "called_positive": 56
+          },
+          {
+            "threshold": 0.33,
+            "net_benefit": 0.04477611940298504,
+            "treat_all": -0.033295063145809434,
+            "called_positive": 53
+          },
+          {
+            "threshold": 0.34,
+            "net_benefit": 0.03885003885003885,
+            "treat_all": -0.048951048951049014,
+            "called_positive": 50
+          },
+          {
+            "threshold": 0.35000000000000003,
+            "net_benefit": 0.01709401709401709,
+            "treat_all": -0.06508875739644976,
+            "called_positive": 42
+          },
+          {
+            "threshold": 0.36000000000000004,
+            "net_benefit": 0.02350427350427349,
+            "treat_all": -0.08173076923076927,
+            "called_positive": 34
+          },
+          {
+            "threshold": 0.37000000000000005,
+            "net_benefit": 0.01221001221001218,
+            "treat_all": -0.098901098901099,
+            "called_positive": 30
+          },
+          {
+            "threshold": 0.38000000000000006,
+            "net_benefit": 0.013509787703336051,
+            "treat_all": -0.11662531017369743,
+            "called_positive": 29
+          },
+          {
+            "threshold": 0.39000000000000007,
+            "net_benefit": 0.017514361776656828,
+            "treat_all": -0.13493064312736458,
+            "called_positive": 25
+          },
+          {
+            "threshold": 0.4000000000000001,
+            "net_benefit": 0.01994301994301992,
+            "treat_all": -0.15384615384615402,
+            "called_positive": 19
+          },
+          {
+            "threshold": 0.4100000000000001,
+            "net_benefit": 0.00043459365493260516,
+            "treat_all": -0.1734028683181228,
+            "called_positive": 17
+          },
+          {
+            "threshold": 0.42000000000000004,
+            "net_benefit": 0.007957559681697604,
+            "treat_all": -0.19363395225464197,
+            "called_positive": 13
+          },
+          {
+            "threshold": 0.43000000000000005,
+            "net_benefit": 0.01904333483280851,
+            "treat_all": -0.21457489878542513,
+            "called_positive": 11
+          },
+          {
+            "threshold": 0.44000000000000006,
+            "net_benefit": 0.01404151404151404,
+            "treat_all": -0.23626373626373642,
+            "called_positive": 7
+          },
+          {
+            "threshold": 0.45000000000000007,
+            "net_benefit": 0.011655011655011647,
+            "treat_all": -0.25874125874125886,
+            "called_positive": 5
+          },
+          {
+            "threshold": 0.4600000000000001,
+            "net_benefit": 0.011079455523899962,
+            "treat_all": -0.28205128205128216,
+            "called_positive": 5
+          },
+          {
+            "threshold": 0.4700000000000001,
+            "net_benefit": 0.0019351717464924974,
+            "treat_all": -0.3062409288824385,
+            "called_positive": 4
+          },
+          {
+            "threshold": 0.4800000000000001,
+            "net_benefit": 0.00920447074293228,
+            "treat_all": -0.3313609467455624,
+            "called_positive": 3
+          },
+          {
+            "threshold": 0.49000000000000005,
+            "net_benefit": 0.017094017094017096,
+            "treat_all": -0.35746606334841624,
+            "called_positive": 2
+          },
+          {
+            "threshold": 0.5000000000000001,
+            "net_benefit": 0.017094017094017096,
+            "treat_all": -0.3846153846153849,
+            "called_positive": 2
+          },
+          {
+            "threshold": 0.5100000000000001,
+            "net_benefit": 0.017094017094017096,
+            "treat_all": -0.4128728414442703,
+            "called_positive": 2
+          },
+          {
+            "threshold": 0.5200000000000001,
+            "net_benefit": 0.008547008547008548,
+            "treat_all": -0.44230769230769273,
+            "called_positive": 1
+          },
+          {
+            "threshold": 0.5300000000000001,
+            "net_benefit": 0.008547008547008548,
+            "treat_all": -0.47299509001636697,
+            "called_positive": 1
+          },
+          {
+            "threshold": 0.5400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.5050167224080273,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5500000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.538461538461539,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5600000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.573426573426574,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6100178890876572,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.648351648351649,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.5900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.6885553470919331,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -0.7307692307692317,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6100000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.7751479289940832,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6200000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.821862348178138,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6300000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.8711018711018716,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6400000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9230769230769238,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6500000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -0.9780219780219788,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6600000000000001,
+            "net_benefit": 0.0,
+            "treat_all": -1.0361990950226252,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6700000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.0979020979020988,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6800000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.1634615384615397,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.6900000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.2332506203473956,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7000000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.307692307692309,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7100000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.387267904509285,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7200000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.4725274725274742,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7300000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.5641025641025659,
+            "called_positive": 0
+          },
+          {
+            "threshold": 0.7400000000000002,
+            "net_benefit": 0.0,
+            "treat_all": -1.6627218934911263,
+            "called_positive": 0
+          }
+        ]
+      }
+    }
+  }
+}

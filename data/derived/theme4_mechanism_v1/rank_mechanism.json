@@ -1,0 +1,262 @@
+{
+  "n": 117,
+  "pcr": 36,
+  "non_pcr": 81,
+  "pairs": 2916,
+  "metrics": {
+    "T0": {
+      "auc_real": 0.659122085048011,
+      "auc_sub": 0.6721536351165981,
+      "auc_difference": 0.013031550068587139,
+      "pairs_changed": 246,
+      "fraction_pairs_changed": 0.08436213991769548,
+      "concordance_gained": 142.0,
+      "concordance_lost": 104.0,
+      "net_concordance": 38.0,
+      "pairs_gaining": 142,
+      "pairs_losing": 104,
+      "tied_pairs_real": 0,
+      "tied_pairs_sub": 0,
+      "spearman_real_vs_sub": 0.9458631179846843
+    },
+    "T1": {
+      "auc_real": 0.7126200274348422,
+      "auc_sub": 0.7030178326474623,
+      "auc_difference": -0.009602194787379892,
+      "pairs_changed": 356,
+      "fraction_pairs_changed": 0.12208504801097393,
+      "concordance_gained": 164.0,
+      "concordance_lost": 192.0,
+      "net_concordance": -28.0,
+      "pairs_gaining": 164,
+      "pairs_losing": 192,
+      "tied_pairs_real": 0,
+      "tied_pairs_sub": 0,
+      "spearman_real_vs_sub": 0.9138527246501696
+    },
+    "relative": {
+      "auc_real": 0.6460905349794238,
+      "auc_sub": 0.6529492455418381,
+      "auc_difference": 0.006858710562414272,
+      "pairs_changed": 350,
+      "fraction_pairs_changed": 0.12002743484224966,
+      "concordance_gained": 185.0,
+      "concordance_lost": 165.0,
+      "net_concordance": 20.0,
+      "pairs_gaining": 185,
+      "pairs_losing": 165,
+      "tied_pairs_real": 0,
+      "tied_pairs_sub": 0,
+      "spearman_real_vs_sub": 0.9210685049547611
+    },
+    "change": {
+      "auc_real": 0.45953360768175583,
+      "auc_sub": 0.46330589849108367,
+      "auc_difference": 0.0037722908093278384,
+      "pairs_changed": 349,
+      "fraction_pairs_changed": 0.11968449931412894,
+      "concordance_gained": 180.0,
+      "concordance_lost": 169.0,
+      "net_concordance": 11.0,
+      "pairs_gaining": 180,
+      "pairs_losing": 169,
+      "tied_pairs_real": 0,
+      "tied_pairs_sub": 0,
+      "spearman_real_vs_sub": 0.8793852747680918
+    }
+  },
+  "volume_T0": {
+    "median_real_ml": 6.32515869140625,
+    "median_sub_ml": 10.993089095208013,
+    "retained_fraction_median": 0.6226707457586714,
+    "retained_fraction_q1": 0.49778306259825067,
+    "retained_fraction_q3": 0.7398147114633329,
+    "n_with_positive_sub_volume": 117,
+    "n_real_zero": 0,
+    "n_log": 117,
+    "sd_log_sub_volume": 1.175154194561539,
+    "sd_log_retained_fraction": 0.3816290226902348,
+    "ratio_sd_log": 0.32474804111355293,
+    "corr_log_sub_vs_log_retained": -0.28728426459319856
+  },
+  "volume_T1": {
+    "median_real_ml": 2.549166156108004,
+    "median_sub_ml": 6.594228317711938,
+    "retained_fraction_median": 0.49983574244415235,
+    "retained_fraction_q1": 0.3266627869694066,
+    "retained_fraction_q3": 0.6464335283876562,
+    "n_with_positive_sub_volume": 115,
+    "n_real_zero": 2,
+    "n_log": 115,
+    "sd_log_sub_volume": 1.55119735727884,
+    "sd_log_retained_fraction": 0.5777065904160109,
+    "ratio_sd_log": 0.3724262342926127,
+    "corr_log_sub_vs_log_retained": -0.12461562960609002
+  },
+  "subtypes": {
+    "HR + / HER2 +": {
+      "n": 20,
+      "pcr": 8,
+      "pairs": 96,
+      "T0": {
+        "auc_difference": 0.041666666666666664,
+        "net_concordance": 4.0,
+        "pairs_changed": 4,
+        "auc_real": 0.6979166666666666,
+        "auc_sub": 0.7395833333333333,
+        "difference_ci_low": 0.0,
+        "difference_ci_high": 0.15625
+      },
+      "T1": {
+        "auc_difference": 0.010416666666666666,
+        "net_concordance": 1.0,
+        "pairs_changed": 9,
+        "auc_real": 0.7604166666666666,
+        "auc_sub": 0.7708333333333333,
+        "difference_ci_low": -0.11458333333333326,
+        "difference_ci_high": 0.13541666666666663
+      },
+      "relative": {
+        "auc_difference": -0.03125,
+        "net_concordance": -3.0,
+        "pairs_changed": 7,
+        "auc_real": 0.5520833333333334,
+        "auc_sub": 0.5208333333333334,
+        "difference_ci_low": -0.12500000000000006,
+        "difference_ci_high": 0.052083333333333315
+      },
+      "change": {
+        "auc_difference": -0.041666666666666664,
+        "net_concordance": -4.0,
+        "pairs_changed": 4,
+        "auc_real": 0.38541666666666663,
+        "auc_sub": 0.34375,
+        "difference_ci_low": -0.12500000000000003,
+        "difference_ci_high": 0.0
+      }
+    },
+    "HR + / HER2 -": {
+      "n": 51,
+      "pcr": 8,
+      "pairs": 344,
+      "T0": {
+        "auc_difference": 0.029069767441860465,
+        "net_concordance": 10.0,
+        "pairs_changed": 26,
+        "auc_real": 0.5290697674418605,
+        "auc_sub": 0.5581395348837209,
+        "difference_ci_low": -0.03197674418604646,
+        "difference_ci_high": 0.09593023255813954
+      },
+      "T1": {
+        "auc_difference": -0.020348837209302327,
+        "net_concordance": -7.0,
+        "pairs_changed": 39,
+        "auc_real": 0.622093023255814,
+        "auc_sub": 0.6017441860465116,
+        "difference_ci_low": -0.11046511627906974,
+        "difference_ci_high": 0.06686046511627908
+      },
+      "relative": {
+        "auc_difference": -0.0436046511627907,
+        "net_concordance": -15.0,
+        "pairs_changed": 53,
+        "auc_real": 0.627906976744186,
+        "auc_sub": 0.5843023255813954,
+        "difference_ci_low": -0.19186046511627908,
+        "difference_ci_high": 0.09302325581395349
+      },
+      "change": {
+        "auc_difference": -0.0377906976744186,
+        "net_concordance": -13.0,
+        "pairs_changed": 37,
+        "auc_real": 0.49709302325581395,
+        "auc_sub": 0.4593023255813954,
+        "difference_ci_low": -0.11627906976744184,
+        "difference_ci_high": 0.02906976744186046
+      }
+    },
+    "HR - / HER2 +": {
+      "n": 10,
+      "pcr": 8,
+      "pairs": 16,
+      "T0": {
+        "auc_difference": -0.0625,
+        "net_concordance": -1.0,
+        "pairs_changed": 1,
+        "auc_real": 0.625,
+        "auc_sub": 0.5625,
+        "difference_ci_low": -0.25,
+        "difference_ci_high": 0.0
+      },
+      "T1": {
+        "auc_difference": -0.1875,
+        "net_concordance": -3.0,
+        "pairs_changed": 3,
+        "auc_real": 0.9375,
+        "auc_sub": 0.75,
+        "difference_ci_low": -0.5,
+        "difference_ci_high": 0.0
+      },
+      "relative": {
+        "auc_difference": 0.0625,
+        "net_concordance": 1.0,
+        "pairs_changed": 3,
+        "auc_real": 0.875,
+        "auc_sub": 0.9375,
+        "difference_ci_low": -0.1875,
+        "difference_ci_high": 0.375
+      },
+      "change": {
+        "auc_difference": -0.0625,
+        "net_concordance": -1.0,
+        "pairs_changed": 1,
+        "auc_real": 0.625,
+        "auc_sub": 0.5625,
+        "difference_ci_low": -0.25,
+        "difference_ci_high": 0.0
+      }
+    },
+    "HR - / HER2 - (TN)": {
+      "n": 36,
+      "pcr": 12,
+      "pairs": 288,
+      "T0": {
+        "auc_difference": -0.03819444444444445,
+        "net_concordance": -11.0,
+        "pairs_changed": 23,
+        "auc_real": 0.7951388888888888,
+        "auc_sub": 0.7569444444444444,
+        "difference_ci_low": -0.14236111111111105,
+        "difference_ci_high": 0.03472222222222221
+      },
+      "T1": {
+        "auc_difference": 0.034722222222222224,
+        "net_concordance": 10.0,
+        "pairs_changed": 36,
+        "auc_real": 0.71875,
+        "auc_sub": 0.7534722222222222,
+        "difference_ci_low": -0.08333333333333326,
+        "difference_ci_high": 0.13888888888888895
+      },
+      "relative": {
+        "auc_difference": 0.034722222222222224,
+        "net_concordance": 10.0,
+        "pairs_changed": 32,
+        "auc_real": 0.5868055555555555,
+        "auc_sub": 0.6215277777777778,
+        "difference_ci_low": -0.04166666666666663,
+        "difference_ci_high": 0.11458333333333331
+      },
+      "change": {
+        "auc_difference": 0.1076388888888889,
+        "net_concordance": 31.0,
+        "pairs_changed": 53,
+        "auc_real": 0.3715277777777778,
+        "auc_sub": 0.47916666666666663,
+        "difference_ci_low": -0.02083333333333337,
+        "difference_ci_high": 0.25347222222222227
+      }
+    }
+  }
+}

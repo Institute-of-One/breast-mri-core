@@ -1,0 +1,56 @@
+{
+  "patient_id": "ACRIN-6698-734997",
+  "manufacturer": "GE MEDICAL SYSTEMS",
+  "visits": {
+    "T0": {
+      "status": "pass",
+      "pair_file": "data\\derived\\theme4_full_v2\\ACRIN-6698-734997_T0.npz",
+      "source": "data\\raw\\theme4_full_v2\\ACRIN-6698-734997_T0.zip",
+      "sha256": "5b7a9e46e12e5de2cf5ab061d490cd56dc17bdb9873587c4657ec2eed37be4d0",
+      "phases": 6,
+      "shape": [
+        134,
+        256,
+        256
+      ],
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "delays_seconds": [
+        0.0,
+        144.3431091309,
+        435.3591308594
+      ],
+      "site": "AAN",
+      "native_input_policy_passed": false,
+      "motion_registered": false
+    },
+    "T1": {
+      "status": "pass",
+      "pair_file": "data\\derived\\theme4_full_v2\\ACRIN-6698-734997_T1.npz",
+      "source": "data\\raw\\theme4_full_v2\\ACRIN-6698-734997_T1.zip",
+      "sha256": "ecd7750e73907d3b51ce6bdaf849493826b896a94e6cf81fa509da04610e39bf",
+      "phases": 6,
+      "shape": [
+        134,
+        256,
+        256
+      ],
+      "indices": [
+        0,
+        2,
+        5
+      ],
+      "delays_seconds": [
+        0.0,
+        144.2905578613,
+        435.3195800781
+      ],
+      "site": "AAN",
+      "native_input_policy_passed": false,
+      "motion_registered": false
+    }
+  }
+}

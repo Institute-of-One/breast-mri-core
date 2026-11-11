@@ -1,0 +1,56 @@
+{
+  "patient_id": "ACRIN-6698-409288",
+  "manufacturer": "Philips Medical Systems",
+  "visits": {
+    "T0": {
+      "status": "pass",
+      "pair_file": "data\\derived\\theme4_full_v2\\ACRIN-6698-409288_T0.npz",
+      "source": "data\\raw\\theme4_full_v2\\ACRIN-6698-409288_T0.zip",
+      "sha256": "99186bf308bace532c171c4877b37d762a2ac8712e74bce15950be28436de8b3",
+      "phases": 7,
+      "shape": [
+        64,
+        256,
+        256
+      ],
+      "indices": [
+        0,
+        2,
+        6
+      ],
+      "delays_seconds": [
+        -71.7290039062,
+        124.0110015869,
+        452.4110107422
+      ],
+      "site": "AAA",
+      "native_input_policy_passed": false,
+      "motion_registered": false
+    },
+    "T1": {
+      "status": "pass",
+      "pair_file": "data\\derived\\theme4_full_v2\\ACRIN-6698-409288_T1.npz",
+      "source": "data\\raw\\theme4_full_v2\\ACRIN-6698-409288_T1.zip",
+      "sha256": "ee255ba2d51d3d146c85d33866eec6cd22974c90814fadfb89d0f247f4ed213f",
+      "phases": 7,
+      "shape": [
+        64,
+        256,
+        256
+      ],
+      "indices": [
+        0,
+        2,
+        6
+      ],
+      "delays_seconds": [
+        -107.4290008545,
+        124.0110015869,
+        452.4110107422
+      ],
+      "site": "AAA",
+      "native_input_policy_passed": false,
+      "motion_registered": false
+    }
+  }
+}

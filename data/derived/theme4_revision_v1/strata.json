@@ -1,0 +1,1805 @@
+{
+  "scope": "post hoc exploratory stratification; Referee 1 point 5",
+  "site_rule": "reported individually at 10 participants or more, pooled below that; the floor was fixed before the counts were read",
+  "pooled_sites": [
+    "AAA",
+    "AAB",
+    "AAC",
+    "AAQ",
+    "AAW",
+    "AAX"
+  ],
+  "caution": "a stratum AUC rests on that stratum's pCR participants alone, so the smallest strata are not informative about the substitution; no stratum difference is claimed, and no threshold for one was prespecified. The retained-fraction analysis beside it uses every examination and no outcome.",
+  "sites_in_cohort": [
+    "AAA",
+    "AAB",
+    "AAC",
+    "AAE",
+    "AAI",
+    "AAK",
+    "AAN",
+    "AAQ",
+    "AAW",
+    "AAX"
+  ],
+  "discrimination": {
+    "site": {
+      "AAE": {
+        "T0": {
+          "n": 21,
+          "pcr": 5,
+          "non_pcr": 16,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.8250000000000001,
+          "sub_auc": 0.75,
+          "real_ci": [
+            0.6,
+            1.0
+          ],
+          "sub_ci": [
+            0.4875,
+            0.95
+          ],
+          "difference_sub_minus_real": -0.07500000000000007,
+          "difference_ci": [
+            -0.20000000000000007,
+            0.03749999999999998
+          ]
+        },
+        "T1": {
+          "n": 21,
+          "pcr": 5,
+          "non_pcr": 16,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.9375,
+          "sub_auc": 0.8875,
+          "real_ci": [
+            0.775,
+            1.0
+          ],
+          "sub_ci": [
+            0.7,
+            1.0
+          ],
+          "difference_sub_minus_real": -0.050000000000000044,
+          "difference_ci": [
+            -0.25,
+            0.125
+          ]
+        },
+        "change": {
+          "n": 21,
+          "pcr": 5,
+          "non_pcr": 16,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.3375,
+          "sub_auc": 0.42500000000000004,
+          "real_ci": [
+            0.1,
+            0.6
+          ],
+          "sub_ci": [
+            0.175,
+            0.675
+          ],
+          "difference_sub_minus_real": 0.08750000000000002,
+          "difference_ci": [
+            0.012499999999999956,
+            0.2
+          ]
+        },
+        "relative": {
+          "n": 21,
+          "pcr": 5,
+          "non_pcr": 16,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.825,
+          "sub_auc": 0.825,
+          "real_ci": [
+            0.5125,
+            1.0
+          ],
+          "sub_ci": [
+            0.5625,
+            1.0
+          ],
+          "difference_sub_minus_real": 0.0,
+          "difference_ci": [
+            -0.19999999999999996,
+            0.20000000000000007
+          ]
+        }
+      },
+      "AAI": {
+        "T0": {
+          "n": 43,
+          "pcr": 13,
+          "non_pcr": 30,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.7256410256410257,
+          "sub_auc": 0.7717948717948718,
+          "real_ci": [
+            0.5461538461538461,
+            0.8794871794871795
+          ],
+          "sub_ci": [
+            0.6,
+            0.9128205128205128
+          ],
+          "difference_sub_minus_real": 0.0461538461538461,
+          "difference_ci": [
+            -0.02051282051282055,
+            0.13076923076923075
+          ]
+        },
+        "T1": {
+          "n": 43,
+          "pcr": 13,
+          "non_pcr": 30,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.7102564102564104,
+          "sub_auc": 0.7487179487179487,
+          "real_ci": [
+            0.5384615384615384,
+            0.8589743589743589
+          ],
+          "sub_ci": [
+            0.5769230769230769,
+            0.8948717948717949
+          ],
+          "difference_sub_minus_real": 0.038461538461538325,
+          "difference_ci": [
+            -0.07948717948717954,
+            0.14871794871794863
+          ]
+        },
+        "change": {
+          "n": 43,
+          "pcr": 13,
+          "non_pcr": 30,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.40512820512820513,
+          "sub_auc": 0.4025641025641026,
+          "real_ci": [
+            0.23333333333333334,
+            0.5846153846153846
+          ],
+          "sub_ci": [
+            0.2358974358974359,
+            0.5743589743589743
+          ],
+          "difference_sub_minus_real": -0.002564102564102555,
+          "difference_ci": [
+            -0.08205128205128204,
+            0.07692307692307693
+          ]
+        },
+        "relative": {
+          "n": 43,
+          "pcr": 13,
+          "non_pcr": 30,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.558974358974359,
+          "sub_auc": 0.5846153846153846,
+          "real_ci": [
+            0.36666666666666664,
+            0.7384615384615385
+          ],
+          "sub_ci": [
+            0.4,
+            0.7589743589743589
+          ],
+          "difference_sub_minus_real": 0.02564102564102566,
+          "difference_ci": [
+            -0.05897435897435893,
+            0.11794871794871797
+          ]
+        }
+      },
+      "AAK": {
+        "T0": {
+          "n": 16,
+          "pcr": 5,
+          "non_pcr": 11,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.45454545454545453,
+          "sub_auc": 0.4909090909090909,
+          "real_ci": [
+            0.14545454545454545,
+            0.7636363636363637
+          ],
+          "sub_ci": [
+            0.18181818181818182,
+            0.8
+          ],
+          "difference_sub_minus_real": 0.036363636363636376,
+          "difference_ci": [
+            -0.14545454545454545,
+            0.2363636363636364
+          ]
+        },
+        "T1": {
+          "n": 16,
+          "pcr": 5,
+          "non_pcr": 11,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.6181818181818182,
+          "sub_auc": 0.6,
+          "real_ci": [
+            0.3090909090909091,
+            0.9090909090909091
+          ],
+          "sub_ci": [
+            0.2727272727272727,
+            0.8909090909090909
+          ],
+          "difference_sub_minus_real": -0.018181818181818188,
+          "difference_ci": [
+            -0.2545454545454546,
+            0.1636363636363637
+          ]
+        },
+        "change": {
+          "n": 16,
+          "pcr": 5,
+          "non_pcr": 11,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.6909090909090909,
+          "sub_auc": 0.5818181818181818,
+          "real_ci": [
+            0.34545454545454546,
+            1.0
+          ],
+          "sub_ci": [
+            0.23636363636363636,
+            0.8727272727272727
+          ],
+          "difference_sub_minus_real": -0.10909090909090913,
+          "difference_ci": [
+            -0.32727272727272727,
+            0.054545454545454536
+          ]
+        },
+        "relative": {
+          "n": 16,
+          "pcr": 5,
+          "non_pcr": 11,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.6727272727272727,
+          "sub_auc": 0.6363636363636364,
+          "real_ci": [
+            0.36363636363636365,
+            0.9272727272727272
+          ],
+          "sub_ci": [
+            0.3090909090909091,
+            0.9272727272727272
+          ],
+          "difference_sub_minus_real": -0.036363636363636376,
+          "difference_ci": [
+            -0.2,
+            0.10909090909090907
+          ]
+        }
+      },
+      "AAN": {
+        "T0": {
+          "n": 10,
+          "pcr": 5,
+          "non_pcr": 5,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.64,
+          "sub_auc": 0.6,
+          "real_ci": [
+            0.2,
+            1.0
+          ],
+          "sub_ci": [
+            0.2,
+            1.0
+          ],
+          "difference_sub_minus_real": -0.040000000000000036,
+          "difference_ci": [
+            -0.24,
+            0.0
+          ]
+        },
+        "T1": {
+          "n": 10,
+          "pcr": 5,
+          "non_pcr": 5,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.68,
+          "sub_auc": 0.76,
+          "real_ci": [
+            0.28,
+            1.0
+          ],
+          "sub_ci": [
+            0.4,
+            1.0
+          ],
+          "difference_sub_minus_real": 0.07999999999999996,
+          "difference_ci": [
+            0.0,
+            0.24000000000000005
+          ]
+        },
+        "change": {
+          "n": 10,
+          "pcr": 5,
+          "non_pcr": 5,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.32,
+          "sub_auc": 0.28,
+          "real_ci": [
+            0.0,
+            0.72
+          ],
+          "sub_ci": [
+            0.0,
+            0.68
+          ],
+          "difference_sub_minus_real": -0.03999999999999998,
+          "difference_ci": [
+            -0.24000000000000002,
+            0.15999999999999998
+          ]
+        },
+        "relative": {
+          "n": 10,
+          "pcr": 5,
+          "non_pcr": 5,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.6000000000000001,
+          "sub_auc": 0.6,
+          "real_ci": [
+            0.2,
+            0.96
+          ],
+          "sub_ci": [
+            0.2,
+            1.0
+          ],
+          "difference_sub_minus_real": -1.1102230246251565e-16,
+          "difference_ci": [
+            -0.39999999999999997,
+            0.39999999999999997
+          ]
+        }
+      },
+      "pooled sites below 10": {
+        "T0": {
+          "n": 27,
+          "pcr": 8,
+          "non_pcr": 19,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.5657894736842105,
+          "sub_auc": 0.5657894736842106,
+          "real_ci": [
+            0.34210526315789475,
+            0.7828947368421053
+          ],
+          "sub_ci": [
+            0.3355263157894737,
+            0.7894736842105263
+          ],
+          "difference_sub_minus_real": 1.1102230246251565e-16,
+          "difference_ci": [
+            -0.1447368421052631,
+            0.11184210526315791
+          ]
+        },
+        "T1": {
+          "n": 27,
+          "pcr": 8,
+          "non_pcr": 19,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.8289473684210525,
+          "sub_auc": 0.7236842105263157,
+          "real_ci": [
+            0.6513157894736842,
+            0.9605263157894737
+          ],
+          "sub_ci": [
+            0.4934210526315789,
+            0.9276315789473685
+          ],
+          "difference_sub_minus_real": -0.10526315789473684,
+          "difference_ci": [
+            -0.3026315789473685,
+            0.05921052631578949
+          ]
+        },
+        "change": {
+          "n": 27,
+          "pcr": 8,
+          "non_pcr": 19,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.4868421052631579,
+          "sub_auc": 0.6052631578947368,
+          "real_ci": [
+            0.2564144736842107,
+            0.7105263157894737
+          ],
+          "sub_ci": [
+            0.3815789473684211,
+            0.8157894736842105
+          ],
+          "difference_sub_minus_real": 0.11842105263157893,
+          "difference_ci": [
+            -0.013157894736842146,
+            0.2960526315789473
+          ]
+        },
+        "relative": {
+          "n": 27,
+          "pcr": 8,
+          "non_pcr": 19,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.736842105263158,
+          "sub_auc": 0.6907894736842105,
+          "real_ci": [
+            0.5263157894736842,
+            0.9013157894736842
+          ],
+          "sub_ci": [
+            0.47368421052631576,
+            0.875
+          ],
+          "difference_sub_minus_real": -0.046052631578947456,
+          "difference_ci": [
+            -0.13157894736842102,
+            0.02631578947368418
+          ]
+        }
+      }
+    },
+    "manufacturer": {
+      "GE": {
+        "T0": {
+          "n": 93,
+          "pcr": 28,
+          "non_pcr": 65,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.6824175824175824,
+          "sub_auc": 0.7054945054945055,
+          "real_ci": [
+            0.5587912087912088,
+            0.7961538461538461
+          ],
+          "sub_ci": [
+            0.5846016483516484,
+            0.8164835164835165
+          ],
+          "difference_sub_minus_real": 0.023076923076923106,
+          "difference_ci": [
+            -0.012087912087912045,
+            0.06483516483516483
+          ]
+        },
+        "T1": {
+          "n": 93,
+          "pcr": 28,
+          "non_pcr": 65,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.7038461538461539,
+          "sub_auc": 0.7115384615384616,
+          "real_ci": [
+            0.5835164835164836,
+            0.8120879120879121
+          ],
+          "sub_ci": [
+            0.5900961538461539,
+            0.8236401098901096
+          ],
+          "difference_sub_minus_real": 0.007692307692307665,
+          "difference_ci": [
+            -0.054395604395604424,
+            0.06373626373626373
+          ]
+        },
+        "change": {
+          "n": 93,
+          "pcr": 28,
+          "non_pcr": 65,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.42802197802197806,
+          "sub_auc": 0.4065934065934066,
+          "real_ci": [
+            0.3065934065934066,
+            0.5543956043956044
+          ],
+          "sub_ci": [
+            0.2895604395604396,
+            0.528021978021978
+          ],
+          "difference_sub_minus_real": -0.021428571428571463,
+          "difference_ci": [
+            -0.0714285714285714,
+            0.02692307692307694
+          ]
+        },
+        "relative": {
+          "n": 93,
+          "pcr": 28,
+          "non_pcr": 65,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.6197802197802197,
+          "sub_auc": 0.6296703296703297,
+          "real_ci": [
+            0.489010989010989,
+            0.74396978021978
+          ],
+          "sub_ci": [
+            0.49945054945054945,
+            0.7538598901098899
+          ],
+          "difference_sub_minus_real": 0.009890109890109966,
+          "difference_ci": [
+            -0.051662087912087935,
+            0.0714285714285714
+          ]
+        }
+      },
+      "Philips": {
+        "T0": {
+          "n": 11,
+          "pcr": 4,
+          "non_pcr": 7,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.5714285714285714,
+          "sub_auc": 0.5714285714285714,
+          "real_ci": [
+            0.21428571428571427,
+            0.8928571428571429
+          ],
+          "sub_ci": [
+            0.21428571428571427,
+            0.8928571428571429
+          ],
+          "difference_sub_minus_real": 0.0,
+          "difference_ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "T1": {
+          "n": 11,
+          "pcr": 4,
+          "non_pcr": 7,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.8214285714285714,
+          "sub_auc": 0.8928571428571429,
+          "real_ci": [
+            0.5,
+            1.0
+          ],
+          "sub_ci": [
+            0.5714285714285714,
+            1.0
+          ],
+          "difference_sub_minus_real": 0.07142857142857151,
+          "difference_ci": [
+            0.0,
+            0.2857142857142857
+          ]
+        },
+        "change": {
+          "n": 11,
+          "pcr": 4,
+          "non_pcr": 7,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.4642857142857143,
+          "sub_auc": 0.5714285714285714,
+          "real_ci": [
+            0.10714285714285714,
+            0.8214285714285714
+          ],
+          "sub_ci": [
+            0.21428571428571427,
+            0.8928571428571429
+          ],
+          "difference_sub_minus_real": 0.1071428571428571,
+          "difference_ci": [
+            -0.10714285714285715,
+            0.42857142857142855
+          ]
+        },
+        "relative": {
+          "n": 11,
+          "pcr": 4,
+          "non_pcr": 7,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.7857142857142857,
+          "sub_auc": 0.6785714285714286,
+          "real_ci": [
+            0.42857142857142855,
+            1.0
+          ],
+          "sub_ci": [
+            0.32142857142857145,
+            1.0
+          ],
+          "difference_sub_minus_real": -0.1071428571428571,
+          "difference_ci": [
+            -0.3214285714285714,
+            0.0
+          ]
+        }
+      },
+      "Siemens": {
+        "T0": {
+          "n": 13,
+          "pcr": 4,
+          "non_pcr": 9,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.5277777777777778,
+          "sub_auc": 0.5,
+          "real_ci": [
+            0.2222222222222222,
+            0.8611111111111112
+          ],
+          "sub_ci": [
+            0.16666666666666666,
+            0.8333333333333334
+          ],
+          "difference_sub_minus_real": -0.02777777777777779,
+          "difference_ci": [
+            -0.2777777777777778,
+            0.16666666666666669
+          ]
+        },
+        "T1": {
+          "n": 13,
+          "pcr": 4,
+          "non_pcr": 9,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.8055555555555556,
+          "sub_auc": 0.6666666666666666,
+          "real_ci": [
+            0.5,
+            1.0
+          ],
+          "sub_ci": [
+            0.3333333333333333,
+            0.9444444444444444
+          ],
+          "difference_sub_minus_real": -0.13888888888888895,
+          "difference_ci": [
+            -0.4444444444444444,
+            0.05555555555555558
+          ]
+        },
+        "change": {
+          "n": 13,
+          "pcr": 4,
+          "non_pcr": 9,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.5,
+          "sub_auc": 0.6388888888888888,
+          "real_ci": [
+            0.19444444444444445,
+            0.8055555555555556
+          ],
+          "sub_ci": [
+            0.3333333333333333,
+            0.9166666666666666
+          ],
+          "difference_sub_minus_real": 0.13888888888888884,
+          "difference_ci": [
+            0.0,
+            0.3888888888888889
+          ]
+        },
+        "relative": {
+          "n": 13,
+          "pcr": 4,
+          "non_pcr": 9,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.7222222222222223,
+          "sub_auc": 0.6666666666666667,
+          "real_ci": [
+            0.4444444444444444,
+            1.0
+          ],
+          "sub_ci": [
+            0.3333333333333333,
+            1.0
+          ],
+          "difference_sub_minus_real": -0.05555555555555558,
+          "difference_ci": [
+            -0.2222222222222222,
+            0.0
+          ]
+        }
+      }
+    },
+    "late_index": {
+      "differs between visits (5, 6)": {
+        "T0": {
+          "n": 6,
+          "pcr": 2,
+          "non_pcr": 4,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.75,
+          "sub_auc": 0.875,
+          "real_ci": [
+            0.25,
+            1.0
+          ],
+          "sub_ci": [
+            0.5,
+            1.0
+          ],
+          "difference_sub_minus_real": 0.125,
+          "difference_ci": [
+            0.0,
+            0.5
+          ]
+        },
+        "T1": {
+          "n": 6,
+          "pcr": 2,
+          "non_pcr": 4,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.625,
+          "sub_auc": 0.875,
+          "real_ci": [
+            0.0,
+            1.0
+          ],
+          "sub_ci": [
+            0.5,
+            1.0
+          ],
+          "difference_sub_minus_real": 0.25,
+          "difference_ci": [
+            0.0,
+            0.75
+          ]
+        },
+        "change": {
+          "n": 6,
+          "pcr": 2,
+          "non_pcr": 4,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.25,
+          "sub_auc": 0.375,
+          "real_ci": [
+            0.0,
+            0.75
+          ],
+          "sub_ci": [
+            0.0,
+            0.75
+          ],
+          "difference_sub_minus_real": 0.125,
+          "difference_ci": [
+            0.0,
+            0.5
+          ]
+        },
+        "relative": {
+          "n": 6,
+          "pcr": 2,
+          "non_pcr": 4,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.625,
+          "sub_auc": 0.625,
+          "real_ci": [
+            0.0,
+            1.0
+          ],
+          "sub_ci": [
+            0.0,
+            1.0
+          ],
+          "difference_sub_minus_real": 0.0,
+          "difference_ci": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "index 5": {
+        "T0": {
+          "n": 34,
+          "pcr": 12,
+          "non_pcr": 22,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.6363636363636364,
+          "sub_auc": 0.6628787878787878,
+          "real_ci": [
+            0.4128787878787879,
+            0.8371212121212122
+          ],
+          "sub_ci": [
+            0.45075757575757575,
+            0.8598484848484849
+          ],
+          "difference_sub_minus_real": 0.02651515151515149,
+          "difference_ci": [
+            -0.02651515151515149,
+            0.09090909090909088
+          ]
+        },
+        "T1": {
+          "n": 34,
+          "pcr": 12,
+          "non_pcr": 22,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.7159090909090909,
+          "sub_auc": 0.7083333333333334,
+          "real_ci": [
+            0.5151515151515151,
+            0.8863636363636364
+          ],
+          "sub_ci": [
+            0.5075757575757576,
+            0.8787878787878788
+          ],
+          "difference_sub_minus_real": -0.007575757575757569,
+          "difference_ci": [
+            -0.10984848484848486,
+            0.08712121212121215
+          ]
+        },
+        "change": {
+          "n": 34,
+          "pcr": 12,
+          "non_pcr": 22,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.5037878787878788,
+          "sub_auc": 0.4507575757575757,
+          "real_ci": [
+            0.2953598484848486,
+            0.7045454545454546
+          ],
+          "sub_ci": [
+            0.24621212121212122,
+            0.6515151515151515
+          ],
+          "difference_sub_minus_real": -0.053030303030303094,
+          "difference_ci": [
+            -0.17045454545454547,
+            0.07196969696969702
+          ]
+        },
+        "relative": {
+          "n": 34,
+          "pcr": 12,
+          "non_pcr": 22,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.7159090909090909,
+          "sub_auc": 0.7045454545454546,
+          "real_ci": [
+            0.5151515151515151,
+            0.8863636363636364
+          ],
+          "sub_ci": [
+            0.4962121212121212,
+            0.8863636363636364
+          ],
+          "difference_sub_minus_real": -0.011363636363636354,
+          "difference_ci": [
+            -0.125,
+            0.09469696969696972
+          ]
+        }
+      },
+      "index 6": {
+        "T0": {
+          "n": 77,
+          "pcr": 22,
+          "non_pcr": 55,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.6760330578512397,
+          "sub_auc": 0.6851239669421488,
+          "real_ci": [
+            0.543801652892562,
+            0.8
+          ],
+          "sub_ci": [
+            0.5504132231404959,
+            0.8091115702479336
+          ],
+          "difference_sub_minus_real": 0.00909090909090915,
+          "difference_ci": [
+            -0.04214876033057846,
+            0.06115702479338847
+          ]
+        },
+        "T1": {
+          "n": 77,
+          "pcr": 22,
+          "non_pcr": 55,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.728099173553719,
+          "sub_auc": 0.7206611570247933,
+          "real_ci": [
+            0.6057851239669422,
+            0.8363636363636363
+          ],
+          "sub_ci": [
+            0.5892561983471074,
+            0.8371900826446281
+          ],
+          "difference_sub_minus_real": -0.007438016528925728,
+          "difference_ci": [
+            -0.09423553719008267,
+            0.07190082644628093
+          ]
+        },
+        "change": {
+          "n": 77,
+          "pcr": 22,
+          "non_pcr": 55,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.45206611570247934,
+          "sub_auc": 0.4752066115702479,
+          "real_ci": [
+            0.32066115702479336,
+            0.5834710743801653
+          ],
+          "sub_ci": [
+            0.34297520661157027,
+            0.6074380165289256
+          ],
+          "difference_sub_minus_real": 0.023140495867768562,
+          "difference_ci": [
+            -0.03223140495867771,
+            0.08264462809917356
+          ]
+        },
+        "relative": {
+          "n": 77,
+          "pcr": 22,
+          "non_pcr": 55,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.6214876033057851,
+          "sub_auc": 0.6462809917355372,
+          "real_ci": [
+            0.48512396694214877,
+            0.7512396694214876
+          ],
+          "sub_ci": [
+            0.5132231404958678,
+            0.7727272727272727
+          ],
+          "difference_sub_minus_real": 0.024793388429752095,
+          "difference_ci": [
+            -0.03884297520661156,
+            0.09008264462809912
+          ]
+        }
+      }
+    },
+    "phases": {
+      "6 phases": {
+        "T0": {
+          "n": 10,
+          "pcr": 5,
+          "non_pcr": 5,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.64,
+          "sub_auc": 0.6,
+          "real_ci": [
+            0.2,
+            1.0
+          ],
+          "sub_ci": [
+            0.2,
+            1.0
+          ],
+          "difference_sub_minus_real": -0.040000000000000036,
+          "difference_ci": [
+            -0.24,
+            0.0
+          ]
+        },
+        "T1": {
+          "n": 10,
+          "pcr": 5,
+          "non_pcr": 5,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.68,
+          "sub_auc": 0.76,
+          "real_ci": [
+            0.28,
+            1.0
+          ],
+          "sub_ci": [
+            0.4,
+            1.0
+          ],
+          "difference_sub_minus_real": 0.07999999999999996,
+          "difference_ci": [
+            0.0,
+            0.24000000000000005
+          ]
+        },
+        "change": {
+          "n": 10,
+          "pcr": 5,
+          "non_pcr": 5,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.32,
+          "sub_auc": 0.28,
+          "real_ci": [
+            0.0,
+            0.72
+          ],
+          "sub_ci": [
+            0.0,
+            0.68
+          ],
+          "difference_sub_minus_real": -0.03999999999999998,
+          "difference_ci": [
+            -0.24000000000000002,
+            0.15999999999999998
+          ]
+        },
+        "relative": {
+          "n": 10,
+          "pcr": 5,
+          "non_pcr": 5,
+          "small_class_warning": true,
+          "status": "estimated",
+          "real_auc": 0.6000000000000001,
+          "sub_auc": 0.6,
+          "real_ci": [
+            0.2,
+            0.96
+          ],
+          "sub_ci": [
+            0.2,
+            1.0
+          ],
+          "difference_sub_minus_real": -1.1102230246251565e-16,
+          "difference_ci": [
+            -0.39999999999999997,
+            0.39999999999999997
+          ]
+        }
+      },
+      "7 phases": {
+        "T0": {
+          "n": 57,
+          "pcr": 16,
+          "non_pcr": 41,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.5701219512195121,
+          "sub_auc": 0.5701219512195121,
+          "real_ci": [
+            0.3978658536585366,
+            0.7347560975609756
+          ],
+          "sub_ci": [
+            0.3978658536585366,
+            0.7347560975609756
+          ],
+          "difference_sub_minus_real": 0.0,
+          "difference_ci": [
+            -0.044207317073170715,
+            0.04878048780487798
+          ]
+        },
+        "T1": {
+          "n": 57,
+          "pcr": 16,
+          "non_pcr": 41,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.7057926829268292,
+          "sub_auc": 0.6707317073170732,
+          "real_ci": [
+            0.5457317073170732,
+            0.850609756097561
+          ],
+          "sub_ci": [
+            0.5076219512195121,
+            0.8216463414634146
+          ],
+          "difference_sub_minus_real": -0.03506097560975596,
+          "difference_ci": [
+            -0.10518292682926822,
+            0.03506097560975607
+          ]
+        },
+        "change": {
+          "n": 57,
+          "pcr": 16,
+          "non_pcr": 41,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.5442073170731707,
+          "sub_auc": 0.5716463414634145,
+          "real_ci": [
+            0.3795731707317073,
+            0.7027439024390244
+          ],
+          "sub_ci": [
+            0.4115853658536585,
+            0.7240853658536586
+          ],
+          "difference_sub_minus_real": 0.027439024390243816,
+          "difference_ci": [
+            -0.04573170731707321,
+            0.1097560975609756
+          ]
+        },
+        "relative": {
+          "n": 57,
+          "pcr": 16,
+          "non_pcr": 41,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.7439024390243901,
+          "sub_auc": 0.7332317073170731,
+          "real_ci": [
+            0.5914634146341463,
+            0.8795731707317073
+          ],
+          "sub_ci": [
+            0.5899390243902439,
+            0.8628429878048774
+          ],
+          "difference_sub_minus_real": -0.010670731707317027,
+          "difference_ci": [
+            -0.08387957317073169,
+            0.0625
+          ]
+        }
+      },
+      "8 phases": {
+        "T0": {
+          "n": 50,
+          "pcr": 15,
+          "non_pcr": 35,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.7238095238095238,
+          "sub_auc": 0.7447619047619047,
+          "real_ci": [
+            0.5638095238095238,
+            0.8628571428571429
+          ],
+          "sub_ci": [
+            0.5847619047619048,
+            0.8857142857142857
+          ],
+          "difference_sub_minus_real": 0.020952380952380945,
+          "difference_ci": [
+            -0.053333333333333344,
+            0.1009523809523809
+          ]
+        },
+        "T1": {
+          "n": 50,
+          "pcr": 15,
+          "non_pcr": 35,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.7047619047619047,
+          "sub_auc": 0.7314285714285714,
+          "real_ci": [
+            0.5466666666666666,
+            0.8438095238095238
+          ],
+          "sub_ci": [
+            0.5619047619047619,
+            0.8723809523809524
+          ],
+          "difference_sub_minus_real": 0.026666666666666727,
+          "difference_ci": [
+            -0.08380952380952378,
+            0.1295238095238096
+          ]
+        },
+        "change": {
+          "n": 50,
+          "pcr": 15,
+          "non_pcr": 35,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.4057142857142857,
+          "sub_auc": 0.4019047619047619,
+          "real_ci": [
+            0.24952380952380954,
+            0.5619523809523803
+          ],
+          "sub_ci": [
+            0.2419047619047619,
+            0.56
+          ],
+          "difference_sub_minus_real": -0.003809523809523818,
+          "difference_ci": [
+            -0.0761904761904762,
+            0.06476190476190474
+          ]
+        },
+        "relative": {
+          "n": 50,
+          "pcr": 15,
+          "non_pcr": 35,
+          "small_class_warning": false,
+          "status": "estimated",
+          "real_auc": 0.5447619047619048,
+          "sub_auc": 0.5657142857142857,
+          "real_ci": [
+            0.37333333333333335,
+            0.7123809523809523
+          ],
+          "sub_ci": [
+            0.3961428571428572,
+            0.7295238095238096
+          ],
+          "difference_sub_minus_real": 0.020952380952380945,
+          "difference_ci": [
+            -0.05714285714285716,
+            0.10476190476190472
+          ]
+        }
+      }
+    }
+  },
+  "magnitude": {
+    "site": {
+      "T0": {
+        "strata": {
+          "AAE": {
+            "retained_fraction": {
+              "n": 21,
+              "median": 0.719976721046802,
+              "q1": 0.6438356164383562,
+              "q3": 0.8205865439907993,
+              "min": 0.4689165186500888,
+              "max": 0.9142509135200976
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 210,
+            "reversed": 16,
+            "fraction_reversed": 0.0761904761904762
+          },
+          "AAI": {
+            "retained_fraction": {
+              "n": 43,
+              "median": 0.6188068756319515,
+              "q1": 0.4351200071953377,
+              "q3": 0.7411081286336548,
+              "min": 0.0810013325718637,
+              "max": 0.8639808536098923
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 903,
+            "reversed": 89,
+            "fraction_reversed": 0.09856035437430787
+          },
+          "AAK": {
+            "retained_fraction": {
+              "n": 16,
+              "median": 0.5231491347205306,
+              "q1": 0.4342647200301951,
+              "q3": 0.5840614555861512,
+              "min": 0.31268676393039196,
+              "max": 0.8193203405333146
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 120,
+            "reversed": 20,
+            "fraction_reversed": 0.16666666666666666
+          },
+          "AAN": {
+            "retained_fraction": {
+              "n": 10,
+              "median": 0.6231731417157751,
+              "q1": 0.5154836121719263,
+              "q3": 0.6861241411535018,
+              "min": 0.46524916943521594,
+              "max": 0.8651587224541306
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 45,
+            "reversed": 3,
+            "fraction_reversed": 0.06666666666666667
+          },
+          "pooled sites below 10": {
+            "retained_fraction": {
+              "n": 27,
+              "median": 0.625756908510404,
+              "q1": 0.5413078804717109,
+              "q3": 0.7295608258081347,
+              "min": 0.1444931333574268,
+              "max": 0.8283474156961255
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 351,
+            "reversed": 33,
+            "fraction_reversed": 0.09401709401709402
+          }
+        },
+        "kruskal_wallis": {
+          "statistic": 17.804718686035244,
+          "p_value": 0.0013473894534618894,
+          "groups": 5,
+          "note": "across strata, on the retained fraction; descriptive, not a prespecified test"
+        }
+      },
+      "T1": {
+        "strata": {
+          "AAE": {
+            "retained_fraction": {
+              "n": 20,
+              "median": 0.6301891900036682,
+              "q1": 0.5282814084527594,
+              "q3": 0.7429960747334823,
+              "min": 0.16073781291172595,
+              "max": 0.8474331777683497
+            },
+            "examinations_without_a_retained_fraction": 1,
+            "examinations_with_a_zero_measured_volume": 1,
+            "pairs": 190,
+            "reversed": 22,
+            "fraction_reversed": 0.11578947368421053
+          },
+          "AAI": {
+            "retained_fraction": {
+              "n": 42,
+              "median": 0.49071754135571766,
+              "q1": 0.32500845165652464,
+              "q3": 0.6423316344141173,
+              "min": 0.03592814371257485,
+              "max": 0.8582944420873991
+            },
+            "examinations_without_a_retained_fraction": 1,
+            "examinations_with_a_zero_measured_volume": 1,
+            "pairs": 861,
+            "reversed": 121,
+            "fraction_reversed": 0.140534262485482
+          },
+          "AAK": {
+            "retained_fraction": {
+              "n": 16,
+              "median": 0.4270652972239002,
+              "q1": 0.3255571604430183,
+              "q3": 0.5620300385589861,
+              "min": 0.17325581395348838,
+              "max": 0.8979422960225079
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 120,
+            "reversed": 19,
+            "fraction_reversed": 0.15833333333333333
+          },
+          "AAN": {
+            "retained_fraction": {
+              "n": 10,
+              "median": 0.4640125238368352,
+              "q1": 0.28884407097039666,
+              "q3": 0.6279621597529954,
+              "min": 0.23704333050127444,
+              "max": 0.7714285714285714
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 45,
+            "reversed": 4,
+            "fraction_reversed": 0.08888888888888889
+          },
+          "pooled sites below 10": {
+            "retained_fraction": {
+              "n": 27,
+              "median": 0.4790645305059698,
+              "q1": 0.3268789283479886,
+              "q3": 0.64683018857723,
+              "min": 0.10540400957791446,
+              "max": 0.837416991069384
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 351,
+            "reversed": 70,
+            "fraction_reversed": 0.19943019943019943
+          }
+        },
+        "kruskal_wallis": {
+          "statistic": 8.465183420194705,
+          "p_value": 0.07594962344393023,
+          "groups": 5,
+          "note": "across strata, on the retained fraction; descriptive, not a prespecified test"
+        }
+      }
+    },
+    "manufacturer": {
+      "T0": {
+        "strata": {
+          "GE": {
+            "retained_fraction": {
+              "n": 93,
+              "median": 0.6218878842676311,
+              "q1": 0.468282943525385,
+              "q3": 0.7398147114633329,
+              "min": 0.0810013325718637,
+              "max": 0.9142509135200976
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 4278,
+            "reversed": 366,
+            "fraction_reversed": 0.08555399719495091
+          },
+          "Philips": {
+            "retained_fraction": {
+              "n": 11,
+              "median": 0.5999064837905237,
+              "q1": 0.5642823405766874,
+              "q3": 0.630809645646227,
+              "min": 0.49538687741224036,
+              "max": 0.8283474156961255
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 55,
+            "reversed": 1,
+            "fraction_reversed": 0.01818181818181818
+          },
+          "Siemens": {
+            "retained_fraction": {
+              "n": 13,
+              "median": 0.6948713366690493,
+              "q1": 0.5787778983973946,
+              "q3": 0.7514819427148195,
+              "min": 0.1444931333574268,
+              "max": 0.8149905123339658
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 78,
+            "reversed": 8,
+            "fraction_reversed": 0.10256410256410256
+          }
+        },
+        "kruskal_wallis": {
+          "statistic": 1.0168044513841323,
+          "p_value": 0.601455802125912,
+          "groups": 3,
+          "note": "across strata, on the retained fraction; descriptive, not a prespecified test"
+        }
+      },
+      "T1": {
+        "strata": {
+          "GE": {
+            "retained_fraction": {
+              "n": 91,
+              "median": 0.5052950075642966,
+              "q1": 0.3266627869694066,
+              "q3": 0.6401359198240788,
+              "min": 0.03592814371257485,
+              "max": 0.8979422960225079
+            },
+            "examinations_without_a_retained_fraction": 2,
+            "examinations_with_a_zero_measured_volume": 2,
+            "pairs": 4095,
+            "reversed": 454,
+            "fraction_reversed": 0.11086691086691086
+          },
+          "Philips": {
+            "retained_fraction": {
+              "n": 11,
+              "median": 0.4989740082079343,
+              "q1": 0.3998433655802174,
+              "q3": 0.6703934379515988,
+              "min": 0.2447069116360455,
+              "max": 0.7475256887095757
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 55,
+            "reversed": 7,
+            "fraction_reversed": 0.12727272727272726
+          },
+          "Siemens": {
+            "retained_fraction": {
+              "n": 13,
+              "median": 0.3838496272183135,
+              "q1": 0.33313565604151224,
+              "q3": 0.602215868477484,
+              "min": 0.10540400957791446,
+              "max": 0.837416991069384
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 78,
+            "reversed": 18,
+            "fraction_reversed": 0.23076923076923078
+          }
+        },
+        "kruskal_wallis": {
+          "statistic": 0.6426185508644267,
+          "p_value": 0.7251989300909132,
+          "groups": 3,
+          "note": "across strata, on the retained fraction; descriptive, not a prespecified test"
+        }
+      }
+    },
+    "late_index": {
+      "T0": {
+        "strata": {
+          "differs between visits (5, 6)": {
+            "retained_fraction": {
+              "n": 6,
+              "median": 0.6363349861332885,
+              "q1": 0.5955824181955512,
+              "q3": 0.7392943404312777,
+              "min": 0.3537204900886542,
+              "max": 0.8503294634452463
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 15,
+            "reversed": 1,
+            "fraction_reversed": 0.06666666666666667
+          },
+          "index 5": {
+            "retained_fraction": {
+              "n": 34,
+              "median": 0.5919111391219191,
+              "q1": 0.499697828400422,
+              "q3": 0.6925887377606779,
+              "min": 0.31268676393039196,
+              "max": 0.8651587224541306
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 561,
+            "reversed": 50,
+            "fraction_reversed": 0.08912655971479501
+          },
+          "index 6": {
+            "retained_fraction": {
+              "n": 77,
+              "median": 0.628188994394234,
+              "q1": 0.49538687741224036,
+              "q3": 0.746790112673596,
+              "min": 0.0810013325718637,
+              "max": 0.9142509135200976
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 2926,
+            "reversed": 266,
+            "fraction_reversed": 0.09090909090909091
+          }
+        },
+        "kruskal_wallis": {
+          "statistic": 1.1512878392240395,
+          "p_value": 0.5623426487389704,
+          "groups": 3,
+          "note": "across strata, on the retained fraction; descriptive, not a prespecified test"
+        }
+      },
+      "T1": {
+        "strata": {
+          "differs between visits (5, 6)": {
+            "retained_fraction": {
+              "n": 5,
+              "median": 0.5326894502228826,
+              "q1": 0.4790645305059698,
+              "q3": 0.6263736263736264,
+              "min": 0.3181766381766382,
+              "max": 0.781967213114754
+            },
+            "examinations_without_a_retained_fraction": 1,
+            "examinations_with_a_zero_measured_volume": 1,
+            "pairs": 10,
+            "reversed": 3,
+            "fraction_reversed": 0.3
+          },
+          "index 5": {
+            "retained_fraction": {
+              "n": 34,
+              "median": 0.4443841975904438,
+              "q1": 0.3332759524190644,
+              "q3": 0.5998050341067427,
+              "min": 0.17325581395348838,
+              "max": 0.8979422960225079
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 561,
+            "reversed": 60,
+            "fraction_reversed": 0.10695187165775401
+          },
+          "index 6": {
+            "retained_fraction": {
+              "n": 76,
+              "median": 0.5050246828629723,
+              "q1": 0.3202080298011935,
+              "q3": 0.6794844205285357,
+              "min": 0.03592814371257485,
+              "max": 0.8582944420873991
+            },
+            "examinations_without_a_retained_fraction": 1,
+            "examinations_with_a_zero_measured_volume": 1,
+            "pairs": 2850,
+            "reversed": 393,
+            "fraction_reversed": 0.13789473684210526
+          }
+        },
+        "kruskal_wallis": {
+          "statistic": 1.1246609976745958,
+          "p_value": 0.569879411767779,
+          "groups": 3,
+          "note": "across strata, on the retained fraction; descriptive, not a prespecified test"
+        }
+      }
+    },
+    "phases": {
+      "T0": {
+        "strata": {
+          "6 phases": {
+            "retained_fraction": {
+              "n": 10,
+              "median": 0.6231731417157751,
+              "q1": 0.5154836121719263,
+              "q3": 0.6861241411535018,
+              "min": 0.46524916943521594,
+              "max": 0.8651587224541306
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 45,
+            "reversed": 3,
+            "fraction_reversed": 0.06666666666666667
+          },
+          "7 phases": {
+            "retained_fraction": {
+              "n": 57,
+              "median": 0.628188994394234,
+              "q1": 0.5427467923540193,
+              "q3": 0.7398147114633329,
+              "min": 0.31268676393039196,
+              "max": 0.9142509135200976
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 1596,
+            "reversed": 125,
+            "fraction_reversed": 0.07832080200501253
+          },
+          "8 phases": {
+            "retained_fraction": {
+              "n": 50,
+              "median": 0.6203473799497913,
+              "q1": 0.45916547684248493,
+              "q3": 0.7423087828530509,
+              "min": 0.0810013325718637,
+              "max": 0.8639808536098923
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 1225,
+            "reversed": 129,
+            "fraction_reversed": 0.10530612244897959
+          }
+        },
+        "kruskal_wallis": {
+          "statistic": 1.2411528168531163,
+          "p_value": 0.5376344512357822,
+          "groups": 3,
+          "note": "across strata, on the retained fraction; descriptive, not a prespecified test"
+        }
+      },
+      "T1": {
+        "strata": {
+          "6 phases": {
+            "retained_fraction": {
+              "n": 10,
+              "median": 0.4640125238368352,
+              "q1": 0.28884407097039666,
+              "q3": 0.6279621597529954,
+              "min": 0.23704333050127444,
+              "max": 0.7714285714285714
+            },
+            "examinations_without_a_retained_fraction": 0,
+            "examinations_with_a_zero_measured_volume": 0,
+            "pairs": 45,
+            "reversed": 4,
+            "fraction_reversed": 0.08888888888888889
+          },
+          "7 phases": {
+            "retained_fraction": {
+              "n": 56,
+              "median": 0.5238733666826361,
+              "q1": 0.33921201473088874,
+              "q3": 0.6563091944758348,
+              "min": 0.16073781291172595,
+              "max": 0.8979422960225079
+            },
+            "examinations_without_a_retained_fraction": 1,
+            "examinations_with_a_zero_measured_volume": 1,
+            "pairs": 1540,
+            "reversed": 172,
+            "fraction_reversed": 0.11168831168831168
+          },
+          "8 phases": {
+            "retained_fraction": {
+              "n": 49,
+              "median": 0.4897465437788019,
+              "q1": 0.3189655172413793,
+              "q3": 0.6161417322834646,
+              "min": 0.03592814371257485,
+              "max": 0.8582944420873991
+            },
+            "examinations_without_a_retained_fraction": 1,
+            "examinations_with_a_zero_measured_volume": 1,
+            "pairs": 1176,
+            "reversed": 171,
+            "fraction_reversed": 0.14540816326530612
+          }
+        },
+        "kruskal_wallis": {
+          "statistic": 1.3619759508001152,
+          "p_value": 0.5061167144117303,
+          "groups": 3,
+          "note": "across strata, on the retained fraction; descriptive, not a prespecified test"
+        }
+      }
+    }
+  }
+}

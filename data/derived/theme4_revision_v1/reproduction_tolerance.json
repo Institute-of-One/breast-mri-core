@@ -1,0 +1,499 @@
+{
+  "scope": "post hoc; Referee 1 point 4",
+  "criterion": {
+    "absolute_cc": 0.01,
+    "relative": 0.001,
+    "form": "both components must satisfy both legs",
+    "note": "neither leg is scale-free, so a failure is reported against the leg that failed"
+  },
+  "note": "the endpoint comparison never reads the stored volume: both arms are computed from the images, so a reproduction mismatch cannot enter the AUC arithmetic. The sensitivity analysis asks instead whether these six participants carry the result.",
+  "spread_over_all_examinations": {
+    "examinations_with_a_non_zero_reference": 232,
+    "examinations_with_a_zero_reference": [
+      {
+        "patient_id": "ACRIN-6698-417474",
+        "visit": "T1",
+        "calculated_cc": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "patient_id": "ACRIN-6698-490805",
+        "visit": "T1",
+        "calculated_cc": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "bit_identical": 9,
+    "median": 1.12920462510337e-11,
+    "p90": 0.00022233317778286697,
+    "p99": 0.005069755633519526,
+    "maximum": 0.02627299957273271,
+    "exceeding_0.1_percent": 5,
+    "exceeding_1_percent": 2
+  },
+  "failures": [
+    {
+      "patient_id": "ACRIN-6698-234723",
+      "visit": "T0",
+      "precision": "native_philips_exact_grid",
+      "failed_legs": [
+        "absolute"
+      ],
+      "stage": "the eligible set reproduces exactly; the difference is voxels on the SER cut-off",
+      "eligible_voxels": 146759,
+      "voxel_volume_cc": 0.0004409790039064044,
+      "absolute_leg_in_voxels": 22.6768166089886,
+      "zero_denominator_in_mask": 0,
+      "negative_denominator_in_mask": 0,
+      "components": {
+        "pe": {
+          "stored_count": 146759,
+          "calculated_count": 146759,
+          "count_difference": 0,
+          "stored_cc": 64.7176376343,
+          "calculated_cc": 64.71763763427734,
+          "difference_cc": -2.2666313270747196e-11,
+          "relative_difference": -3.502339408435726e-13,
+          "fails_absolute_leg": false,
+          "fails_relative_leg": false
+        },
+        "ser": {
+          "stored_count": 76123,
+          "calculated_count": 76157,
+          "count_difference": 34,
+          "stored_cc": 33.5686447144,
+          "calculated_cc": 33.58363800048828,
+          "difference_cc": 0.014993286088277102,
+          "relative_difference": 0.00044664555914720636,
+          "fails_absolute_leg": true,
+          "fails_relative_leg": false
+        }
+      }
+    },
+    {
+      "patient_id": "ACRIN-6698-234723",
+      "visit": "T1",
+      "precision": "native_philips_exact_grid",
+      "failed_legs": [
+        "absolute",
+        "relative"
+      ],
+      "stage": "the eligible set reproduces exactly; the difference is voxels on the SER cut-off",
+      "eligible_voxels": 152491,
+      "voxel_volume_cc": 0.0004409790039064601,
+      "absolute_leg_in_voxels": 22.676816608985735,
+      "zero_denominator_in_mask": 0,
+      "negative_denominator_in_mask": 0,
+      "components": {
+        "pe": {
+          "stored_count": 152491,
+          "calculated_count": 152491,
+          "count_difference": 0,
+          "stored_cc": 67.2453292847,
+          "calculated_cc": 67.24532928466796,
+          "difference_cc": -3.204547738278052e-11,
+          "relative_difference": -4.765457723778544e-13,
+          "fails_absolute_leg": false,
+          "fails_relative_leg": false
+        },
+        "ser": {
+          "stored_count": 48833,
+          "calculated_count": 48892,
+          "count_difference": 59,
+          "stored_cc": 21.5343276978,
+          "calculated_cc": 21.560345458984376,
+          "difference_cc": 0.026017761184377264,
+          "relative_difference": 0.0012081993712316037,
+          "fails_absolute_leg": true,
+          "fails_relative_leg": true
+        }
+      }
+    },
+    {
+      "patient_id": "ACRIN-6698-342959",
+      "visit": "T0",
+      "precision": "native_philips_exact_grid",
+      "failed_legs": [
+        "absolute",
+        "relative"
+      ],
+      "stage": "the eligible set differs: the early-enhancement decision changed",
+      "eligible_voxels": 30552,
+      "voxel_volume_cc": 0.0004154205322274728,
+      "absolute_leg_in_voxels": 24.071992653758087,
+      "zero_denominator_in_mask": 0,
+      "negative_denominator_in_mask": 0,
+      "components": {
+        "pe": {
+          "stored_count": 30896,
+          "calculated_count": 30552,
+          "count_difference": -344,
+          "stored_cc": 12.8348327637,
+          "calculated_cc": 12.691928100585939,
+          "difference_cc": -0.14290466311406114,
+          "relative_difference": -0.011134127397298854,
+          "fails_absolute_leg": true,
+          "fails_relative_leg": true
+        },
+        "ser": {
+          "stored_count": 16674,
+          "calculated_count": 16582,
+          "count_difference": -92,
+          "stored_cc": 6.9267219543,
+          "calculated_cc": 6.8885032653808596,
+          "difference_cc": -0.03821868891914004,
+          "relative_difference": -0.005517572261640224,
+          "fails_absolute_leg": true,
+          "fails_relative_leg": true
+        }
+      }
+    },
+    {
+      "patient_id": "ACRIN-6698-356431",
+      "visit": "T1",
+      "precision": "published_crop",
+      "failed_legs": [
+        "relative"
+      ],
+      "stage": "the eligible set reproduces exactly; the difference is voxels on the SER cut-off",
+      "eligible_voxels": 20898,
+      "voxel_volume_cc": 0.001044590579998086,
+      "absolute_leg_in_voxels": 9.573128641480112,
+      "zero_denominator_in_mask": 0,
+      "negative_denominator_in_mask": 0,
+      "components": {
+        "pe": {
+          "stored_count": 20898,
+          "calculated_count": 20898,
+          "count_difference": 0,
+          "stored_cc": 21.8298539408,
+          "calculated_cc": 21.82985394084,
+          "difference_cc": 4.000000330961484e-11,
+          "relative_difference": 1.832353226828276e-12,
+          "fails_absolute_leg": false,
+          "fails_relative_leg": false
+        },
+        "ser": {
+          "stored_count": 1498,
+          "calculated_count": 1500,
+          "count_difference": 2,
+          "stored_cc": 1.5647966888,
+          "calculated_cc": 1.5668858700000001,
+          "difference_cc": 0.002089181200000123,
+          "relative_difference": 0.0013351135102428286,
+          "fails_absolute_leg": false,
+          "fails_relative_leg": true
+        }
+      }
+    },
+    {
+      "patient_id": "ACRIN-6698-435279",
+      "visit": "T0",
+      "precision": "published_crop",
+      "failed_legs": [
+        "absolute",
+        "relative"
+      ],
+      "stage": "the eligible set differs: the early-enhancement decision changed",
+      "eligible_voxels": 45512,
+      "voxel_volume_cc": 0.0006580191420004279,
+      "absolute_leg_in_voxels": 15.19712628662936,
+      "zero_denominator_in_mask": 0,
+      "negative_denominator_in_mask": 0,
+      "components": {
+        "pe": {
+          "stored_count": 46740,
+          "calculated_count": 45512,
+          "count_difference": -1228,
+          "stored_cc": 30.7558146971,
+          "calculated_cc": 29.947767190704045,
+          "difference_cc": -0.8080475063959547,
+          "relative_difference": -0.02627299957273271,
+          "fails_absolute_leg": true,
+          "fails_relative_leg": true
+        },
+        "ser": {
+          "stored_count": 14526,
+          "calculated_count": 14231,
+          "count_difference": -295,
+          "stored_cc": 9.5583860567,
+          "calculated_cc": 9.364270409802014,
+          "difference_cc": -0.19411564689798588,
+          "relative_difference": -0.02030841250253954,
+          "fails_absolute_leg": true,
+          "fails_relative_leg": true
+        }
+      }
+    },
+    {
+      "patient_id": "ACRIN-6698-516834",
+      "visit": "T1",
+      "precision": "published_crop",
+      "failed_legs": [
+        "relative"
+      ],
+      "stage": "the eligible set differs: the early-enhancement decision changed",
+      "eligible_voxels": 746,
+      "voxel_volume_cc": 0.0007812499999999999,
+      "absolute_leg_in_voxels": 12.8,
+      "zero_denominator_in_mask": 0,
+      "negative_denominator_in_mask": 0,
+      "components": {
+        "pe": {
+          "stored_count": 741,
+          "calculated_count": 746,
+          "count_difference": 5,
+          "stored_cc": 0.57890625,
+          "calculated_cc": 0.5828125000000001,
+          "difference_cc": 0.003906250000000111,
+          "relative_difference": 0.006747638326585887,
+          "fails_absolute_leg": false,
+          "fails_relative_leg": true
+        },
+        "ser": {
+          "stored_count": 457,
+          "calculated_count": 459,
+          "count_difference": 2,
+          "stored_cc": 0.35703125,
+          "calculated_cc": 0.35859375000000004,
+          "difference_cc": 0.0015625000000000222,
+          "relative_difference": 0.004376367614879712,
+          "fails_absolute_leg": false,
+          "fails_relative_leg": true
+        }
+      }
+    },
+    {
+      "patient_id": "ACRIN-6698-839274",
+      "visit": "T0",
+      "precision": "native_philips_exact_grid",
+      "failed_legs": [
+        "absolute"
+      ],
+      "stage": "the eligible set differs: the early-enhancement decision changed",
+      "eligible_voxels": 189413,
+      "voxel_volume_cc": 0.0004132652951203413,
+      "absolute_leg_in_voxels": 24.197531508393507,
+      "zero_denominator_in_mask": 0,
+      "negative_denominator_in_mask": 0,
+      "components": {
+        "pe": {
+          "stored_count": 189378,
+          "calculated_count": 189413,
+          "count_difference": 35,
+          "stored_cc": 78.2633550593,
+          "calculated_cc": 78.27781934231086,
+          "difference_cc": 0.014464283010866552,
+          "relative_difference": 0.00018481552445466965,
+          "fails_absolute_leg": true,
+          "fails_relative_leg": false
+        },
+        "ser": {
+          "stored_count": 146020,
+          "calculated_count": 146059,
+          "count_difference": 39,
+          "stored_cc": 60.3449983935,
+          "calculated_cc": 60.36111573819423,
+          "difference_cc": 0.016117344694229985,
+          "relative_difference": 0.00026708667036713435,
+          "fails_absolute_leg": true,
+          "fails_relative_leg": false
+        }
+      }
+    }
+  ],
+  "excluded_patients": [
+    "ACRIN-6698-234723",
+    "ACRIN-6698-342959",
+    "ACRIN-6698-356431",
+    "ACRIN-6698-435279",
+    "ACRIN-6698-516834",
+    "ACRIN-6698-839274"
+  ],
+  "comparisons": {
+    "all": {
+      "T0": {
+        "n": 117,
+        "pcr": 36,
+        "non_pcr": 81,
+        "small_class_warning": false,
+        "status": "estimated",
+        "real_auc": 0.659122085048011,
+        "sub_auc": 0.6721536351165982,
+        "real_ci": [
+          0.5521262002743484,
+          0.7606310013717421
+        ],
+        "sub_ci": [
+          0.565843621399177,
+          0.7729852537722908
+        ],
+        "difference_sub_minus_real": 0.01303155006858725,
+        "difference_ci": [
+          -0.025720164609053575,
+          0.051097393689986226
+        ]
+      },
+      "T1": {
+        "n": 117,
+        "pcr": 36,
+        "non_pcr": 81,
+        "small_class_warning": false,
+        "status": "estimated",
+        "real_auc": 0.7126200274348422,
+        "sub_auc": 0.7030178326474622,
+        "real_ci": [
+          0.6124742798353909,
+          0.8065843621399177
+        ],
+        "sub_ci": [
+          0.5984224965706447,
+          0.8021262002743484
+        ],
+        "difference_sub_minus_real": -0.009602194787380003,
+        "difference_ci": [
+          -0.0675582990397805,
+          0.04320987654320996
+        ]
+      },
+      "change": {
+        "n": 117,
+        "pcr": 36,
+        "non_pcr": 81,
+        "small_class_warning": false,
+        "status": "estimated",
+        "real_auc": 0.4595336076817559,
+        "sub_auc": 0.4633058984910837,
+        "real_ci": [
+          0.3556241426611797,
+          0.5672153635116598
+        ],
+        "sub_ci": [
+          0.35768175582990397,
+          0.571682098765432
+        ],
+        "difference_sub_minus_real": 0.0037722908093278384,
+        "difference_ci": [
+          -0.04595336076817558,
+          0.05522119341563777
+        ]
+      },
+      "relative": {
+        "n": 117,
+        "pcr": 36,
+        "non_pcr": 81,
+        "small_class_warning": false,
+        "status": "estimated",
+        "real_auc": 0.6460905349794239,
+        "sub_auc": 0.6529492455418382,
+        "real_ci": [
+          0.5384002057613169,
+          0.7489797668038408
+        ],
+        "sub_ci": [
+          0.5473251028806584,
+          0.7537808641975308
+        ],
+        "difference_sub_minus_real": 0.006858710562414272,
+        "difference_ci": [
+          -0.04252400548696844,
+          0.05555555555555558
+        ]
+      }
+    },
+    "reproduced": {
+      "T0": {
+        "n": 111,
+        "pcr": 34,
+        "non_pcr": 77,
+        "small_class_warning": false,
+        "status": "estimated",
+        "real_auc": 0.6772345301757067,
+        "sub_auc": 0.6906035141329259,
+        "real_ci": [
+          0.5679812834224599,
+          0.7784663865546217
+        ],
+        "sub_ci": [
+          0.5817417876241405,
+          0.7945091673032848
+        ],
+        "difference_sub_minus_real": 0.013368983957219194,
+        "difference_ci": [
+          -0.028647822765469844,
+          0.05538579067990834
+        ]
+      },
+      "T1": {
+        "n": 111,
+        "pcr": 34,
+        "non_pcr": 77,
+        "small_class_warning": false,
+        "status": "estimated",
+        "real_auc": 0.7181054239877769,
+        "sub_auc": 0.7177234530175707,
+        "real_ci": [
+          0.6157372039724981,
+          0.8147440794499619
+        ],
+        "sub_ci": [
+          0.6111535523300229,
+          0.8177998472116119
+        ],
+        "difference_sub_minus_real": -0.0003819709702062024,
+        "difference_ci": [
+          -0.05118411000763934,
+          0.048128342245989275
+        ]
+      },
+      "change": {
+        "n": 111,
+        "pcr": 34,
+        "non_pcr": 77,
+        "small_class_warning": false,
+        "status": "estimated",
+        "real_auc": 0.4507257448433919,
+        "sub_auc": 0.4430863254392666,
+        "real_ci": [
+          0.3422459893048128,
+          0.5603514132925898
+        ],
+        "sub_ci": [
+          0.3357524828113063,
+          0.551948051948052
+        ],
+        "difference_sub_minus_real": -0.007639419404125269,
+        "difference_ci": [
+          -0.05614973262032086,
+          0.04240832696715037
+        ]
+      },
+      "relative": {
+        "n": 111,
+        "pcr": 34,
+        "non_pcr": 77,
+        "small_class_warning": false,
+        "status": "estimated",
+        "real_auc": 0.6443850267379678,
+        "sub_auc": 0.6520244461420932,
+        "real_ci": [
+          0.5336134453781513,
+          0.7501909854851031
+        ],
+        "sub_ci": [
+          0.5435351413292591,
+          0.7563025210084033
+        ],
+        "difference_sub_minus_real": 0.0076394194041253805,
+        "difference_ci": [
+          -0.03934300993124529,
+          0.055767761650114545
+        ]
+      }
+    }
+  }
+}

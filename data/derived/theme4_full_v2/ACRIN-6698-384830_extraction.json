@@ -1,0 +1,57 @@
+{
+  "patient_id": "ACRIN-6698-384830",
+  "split": "development",
+  "manufacturer": "SIEMENS",
+  "visits": {
+    "T0": {
+      "status": "pass",
+      "pair_file": "data\\derived\\theme3_development_v1\\ACRIN-6698-384830_T0.npz",
+      "source": "data\\raw\\theme3_development_v1\\ACRIN-6698-384830_T0.zip",
+      "sha256": "3843e90273e437103219c547a407449d3ff72ea3d18d9471910254c4297747e6",
+      "phases": 8,
+      "shape": [
+        80,
+        256,
+        256
+      ],
+      "indices": [
+        0,
+        2,
+        6
+      ],
+      "delays_seconds": [
+        -160.1325073242,
+        127.3125,
+        466.8150024414
+      ],
+      "site": "AAB",
+      "native_input_policy_passed": false,
+      "motion_registered": false
+    },
+    "T1": {
+      "status": "pass",
+      "pair_file": "data\\derived\\theme3_development_v1\\ACRIN-6698-384830_T1.npz",
+      "source": "data\\raw\\theme3_development_v1\\ACRIN-6698-384830_T1.zip",
+      "sha256": "ccb5889cd594ef81f4da46696a2d163614d549030b1bc0d9290c97bd544d7b26",
+      "phases": 8,
+      "shape": [
+        80,
+        256,
+        256
+      ],
+      "indices": [
+        0,
+        2,
+        6
+      ],
+      "delays_seconds": [
+        -133.1275024414,
+        127.3775024414,
+        466.8775024414
+      ],
+      "site": "AAB",
+      "native_input_policy_passed": false,
+      "motion_registered": false
+    }
+  }
+}
