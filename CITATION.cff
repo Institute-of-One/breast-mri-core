@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software or its derived data, please cite it using this metadata."
 title: "breast-mri-core: late-phase removal and SER-filtered tumor volume in breast MRI (analysis code and derived scores)"
 type: software
-version: 0.1.0
-date-released: "2026-09-18"
+version: 0.2.0
+date-released: "2026-11-12"
 license: MIT
 repository-code: "https://github.com/Institute-of-One/breast-mri-core"
 doi: "10.5281/zenodo.22822698"

@@ -1,0 +1,70 @@
+name: revision
+
+# The reproduce workflow checks Supplementary Data S1 and the pair
+# decomposition, which is what the first version of the manuscript rested on.
+# This one checks the work added at revision, and it checks it the only way
+# that means anything: the committed results are deleted first and rebuilt
+# from the committed code, so a step that quietly stops writing a file fails
+# instead of comparing that file with itself.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  revision:
+    name: The revision's tests pass and its results regenerate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Install the pinned environment
+        run: python -m pip install -r requirements.lock.txt
+
+      # Three suites. test_crossval holds the counterexamples that found the
+      # leave-one-out defect; test_early_only plants the defects the
+      # containment measurement exists to catch; test_early_only_injection
+      # breaks the module on purpose and fails if those tests stay green.
+      - name: Tests
+        working-directory: analysis
+        run: python -m unittest test_crossval test_early_only test_early_only_injection -v
+
+      - name: The frozen plans are unchanged since they were frozen
+        run: |
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, "analysis")
+          import theme4_early_only as m
+          lock = m.require_freeze()
+          print("plan  ", lock["plan_sha256"])
+          print("script", lock["script_sha256"])
+          PY
+
+      # Delete, rebuild, and let git decide. A result the build no longer
+      # writes shows up as a deletion; one that drifted shows up as a diff.
+      - name: The revision's results regenerate from the committed code
+        run: |
+          rm -f data/derived/theme4_revision_v1/rank_preservation.json \
+                data/derived/theme4_revision_v1/reproduction_tolerance.json \
+                data/derived/theme4_revision_v1/strata.json \
+                data/derived/theme4_revision_v1/subtype_adjusted.json \
+                data/derived/theme4_revision_v1/clinical_utility.json
+          python analysis/theme4_rank_preservation.py
+          python analysis/theme4_reproduction_tolerance.py
+          python analysis/theme4_strata.py
+          python analysis/theme4_subtype_adjusted.py
+          python analysis/theme4_clinical_utility.py
+          git diff --exit-code -- data/derived/theme4_revision_v1
+
+      # The support experiment and the validation read the images, which are
+      # not redistributed, so they cannot run here. Their code, their frozen
+      # plans and their results are in the repository; this step only checks
+      # that the modules import, because an archive whose code cannot be
+      # imported is not an archive.
+      - name: The image-dependent modules import
+        working-directory: analysis
+        run: python -c "import theme4_early_only, theme4_validation_analyse, freeze_validation_plan; print('ok')"
