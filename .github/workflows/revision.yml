@@ -44,10 +44,23 @@ jobs:
           print("script", lock["script_sha256"])
           PY
 
-      # Delete, rebuild, and let git decide. A result the build no longer
-      # writes shows up as a deletion; one that drifted shows up as a diff.
+      # Delete, rebuild, compare. A result the build no longer writes is a
+      # missing file, not a file that matches itself.
+      #
+      # The comparison is numeric, not byte-for-byte. The committed results
+      # were produced on Windows and this runner is Ubuntu, and the logistic
+      # fits land on different last bits through a different BLAS: the first
+      # push of this workflow failed on differences at the fifteenth
+      # significant digit, such as 1.0803138193249566 against
+      # 1.0803138193249424. The manuscript quotes these to three or four
+      # decimals, so a tolerance of 1e-9 relative is still some six orders of
+      # magnitude tighter than anything reported, while last-bit noise is
+      # around 1e-14. Structure and every non-numeric value must match
+      # exactly, so a renamed key or a changed label still fails.
       - name: The revision's results regenerate from the committed code
         run: |
+          mkdir -p /tmp/committed
+          cp data/derived/theme4_revision_v1/*.json /tmp/committed/
           rm -f data/derived/theme4_revision_v1/rank_preservation.json \
                 data/derived/theme4_revision_v1/reproduction_tolerance.json \
                 data/derived/theme4_revision_v1/strata.json \
@@ -58,7 +71,36 @@ jobs:
           python analysis/theme4_strata.py
           python analysis/theme4_subtype_adjusted.py
           python analysis/theme4_clinical_utility.py
-          git diff --exit-code -- data/derived/theme4_revision_v1
+          python - <<'PY'
+          import json, math, pathlib, sys
+
+          REBUILT = ["rank_preservation", "reproduction_tolerance", "strata",
+                     "subtype_adjusted", "clinical_utility"]
+
+          def same(a, b, path="$"):
+              if isinstance(a, dict):
+                  assert isinstance(b, dict) and a.keys() == b.keys(), path
+                  for k in a:
+                      same(a[k], b[k], f"{path}.{k}")
+              elif isinstance(a, list):
+                  assert isinstance(b, list) and len(a) == len(b), path
+                  for i, (x, y) in enumerate(zip(a, b)):
+                      same(x, y, f"{path}[{i}]")
+              elif isinstance(a, bool) or isinstance(b, bool):
+                  assert a is b, (path, a, b)
+              elif isinstance(a, (int, float)) and isinstance(b, (int, float)):
+                  assert math.isclose(a, b, rel_tol=1e-9, abs_tol=1e-12), (path, a, b)
+              else:
+                  assert a == b, (path, a, b)
+
+          for name in REBUILT:
+              now = pathlib.Path(f"data/derived/theme4_revision_v1/{name}.json")
+              assert now.exists(), f"{name}.json was not rebuilt"
+              was = pathlib.Path(f"/tmp/committed/{name}.json")
+              same(json.loads(was.read_text()), json.loads(now.read_text()), name)
+              print(f"{name}.json reproduced")
+          print(f"{len(REBUILT)} result files reproduced from the committed code")
+          PY
 
       # The support experiment and the validation read the images, which are
       # not redistributed, so they cannot run here. Their code, their frozen
