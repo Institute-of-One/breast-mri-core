@@ -9,10 +9,10 @@ repository-code: "https://github.com/Institute-of-One/breast-mri-core"
 doi: "10.5281/zenodo.22822698"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.22822699"
+    value: "10.5281/zenodo.24166363"
     description: >-
-      The archived version 0.1.0, as cited in the manuscript. The DOI above always resolves
-      to the latest version.
+      The archived version 0.2.0, as cited in the manuscript. The DOI
+      above always resolves to the latest version.
 abstract: >-
   Analysis code and derived scores for a study of how removing the late post-contrast
   phase changes signal-enhancement-ratio-filtered functional tumor volume in breast MRI,
